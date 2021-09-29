@@ -1,0 +1,43 @@
+.card3-2 {
+  position: absolute;
+  width: 474px;
+  height: 231px;
+  left: 768px;
+  top: 532px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+
+.card3-1 {
+  position: absolute;
+  width: 474px;
+  height: 231px;
+  left: 264px;
+  top: 532px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+
+.card3-3 {
+  position: absolute;
+  width: 474px;
+  height: 231px;
+  left: 264px;
+  top: 793px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
+
+.card3-4 {
+  position: absolute;
+  width: 474px;
+  height: 231px;
+  left: 768px;
+  top: 793px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+}
