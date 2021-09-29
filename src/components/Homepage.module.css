@@ -150,13 +150,14 @@ color: #403B3B;
 }
 .sllf{
     font-family: Source Serif Pro;
+    width:38rem;
 font-style: normal;
 font-weight: normal;
 font-size: 3.2rem;
 line-height: 108.3%;
 letter-spacing: 0.005em;
 color: #241C15;
-margin-left:5rem;
+/* border:1px solid black; */
 margin-top:15rem
 }
 .slright{
