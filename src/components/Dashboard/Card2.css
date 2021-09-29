@@ -51,7 +51,7 @@
   color: #828282;
 }
 
-button {
+.buttonCard2{
   position: relative;
   top: 80px;
   left: 31px;
@@ -60,7 +60,7 @@ button {
   border: none;
   background: #007c89;
 }
-span {
+.spanCard2 {
   width: 74px;
   height: 18px;
 
