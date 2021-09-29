@@ -1,0 +1,77 @@
+.card2 {
+  position: absolute;
+  width: 504px;
+  height: 307px;
+  left: 739px;
+  top: 202px;
+
+  border: 1px solid #dcdcdc;
+  box-sizing: border-box;
+  z-index: 0;
+  /* overflow: hidden; */
+}
+
+.title {
+  position: relative;
+  width: 350px;
+  height: 40px;
+  top: 50px;
+  left: 31px;
+  bottom: 190px;
+
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
+.text {
+  position: relative;
+
+  top: 60px;
+  left: 31px;
+  width: 393px;
+  height: 44px;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+  letter-spacing: -0.03em;
+
+  color: #828282;
+}
+
+button {
+  position: relative;
+  top: 80px;
+  left: 31px;
+  width: 128px;
+  height: 41px;
+  border: none;
+  background: #007c89;
+}
+span {
+  width: 74px;
+  height: 18px;
+
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  /* or 136% */
+
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
