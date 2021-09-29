@@ -1,9 +1,10 @@
 import "./styles.css";
+import Routers from "./Routers/Routers"
 
 export default function App() {
   return (
     <div className="App">
-      <h1>mail-chimp clone</h1>
+      <Routers/>
     </div>
   );
 }
