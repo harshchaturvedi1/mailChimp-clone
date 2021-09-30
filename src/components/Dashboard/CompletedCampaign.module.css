@@ -1,0 +1,104 @@
+.wrapper {
+  width: 62.41rem;
+  display: flex;
+  margin-left: 26.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #bdbab8;
+}
+
+.top {
+  margin-top: 5rem;
+  margin-bottom: 2.2rem;
+}
+
+.completed {
+  background: #d8eacc;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.campaign {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+  margin-right: 1rem;
+
+  letter-spacing: -0.03em;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.date {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.campaignName {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.email {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: -0.03em;
+  margin-bottom: 2.2rem;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.clicks {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.03em;
+
+  /* Black - 900 */
+  margin-bottom: 3.1rem;
+  color: #241c15;
+}
+
+.clicks span {
+  font-weight: 600;
+}

@@ -2,13 +2,17 @@ import { Route, Switch } from "react-router-dom"
 import { CreatingAnEmail } from "../components/CreatingAnEmail/CreatingAnEmail"
 import { DashboardMain } from "../components/Dashboard/DashboardMain"
 import Homepage from "../components/Homepage"
+import SignupPage from "../components/SignupPage/Signup"
+
 export default function Routers() {
     return <div>
         <Switch>
             <Route exact path="/">
                 <Homepage />
             </Route>
-
+            <Route path="/signup">
+                <SignupPage />
+            </Route>
             {/* to dashboard */}
             <Route exact path="/dashboard">
                 <DashboardMain />
