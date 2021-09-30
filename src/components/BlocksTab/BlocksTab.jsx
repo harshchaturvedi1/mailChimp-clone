@@ -3,13 +3,18 @@ import styles from "./BlocksTab.module.css";
 export const BlocksTab = () => {
     return (
         <>
+            {/* header */}
             <div className={styles.navbar}>
                 <img src="./BlocksTabImages/navbar.png" alt="" />
             </div>
-            <div className={styles.sidebar}>
+
+            {/* leftdiv image */}
+            <div className={styles.leftbar}>
                 <img src="./BlocksTabImages/sidebar.png" alt="" />
             </div>
-            <div className={styles.leftbar}>
+
+            {/* right div */}
+            <div className={styles.rightbar}>
             </div>
         </>
     );
