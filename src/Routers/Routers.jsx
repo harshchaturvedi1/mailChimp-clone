@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom"
+import { BlocksTab } from "../components/BlocksTab/BlocksTab"
 import { CreatingAnEmail } from "../components/CreatingAnEmail/CreatingAnEmail"
 import { DashboardMain } from "../components/Dashboard/DashboardMain"
 import Homepage from "../components/Homepage"
@@ -20,6 +21,10 @@ export default function Routers() {
             <Route exact path="/createEmail">
                 <CreatingAnEmail />
             </Route>
+            <Route exact path="/blocktab">
+                <BlocksTab />
+            </Route>
+
             <Route>Error 404</Route>
         </Switch>
     </div>

@@ -147,6 +147,8 @@
   margin-top: 14px;
   height: 44px;
   outline: none;
+  padding-left: 16px;
+  font-size: 16px;
 }
 .Button {
   height: 42px;
@@ -154,6 +156,9 @@
   margin-left: 252px;
   margin-top: 36px;
   border: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Graphik;
   outline: none;
   border-radius: 0px;
   padding: 12px, 34px, 12px, 34px;
