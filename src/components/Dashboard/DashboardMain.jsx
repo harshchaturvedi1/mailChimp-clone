@@ -10,7 +10,7 @@ import './DashboardMain.css'
 
 export const DashboardMain = () => {
 
-    const [status, setStatus] = useState(true);
+    const [status, setStatus] = useState(false);
 
     return (
         <>
@@ -38,8 +38,8 @@ export const DashboardMain = () => {
                     "./dashboard-images/Card3_img4.png"} head={"Start an automation"} body={"Send timely and perosnalized emails without having to hit the send buttton each time."} button={"Get Started"} /></div>
             </div>
             <div style={{ display: "flex" }}>
-                <Card4 />
-                <AudienceCard />
+                <Card4 value={status} />
+                <AudienceCard status={status} />
             </div>
             <div className="feedEnd">
                 <div className="feedEndText">You have reached the end of the feed.</div>

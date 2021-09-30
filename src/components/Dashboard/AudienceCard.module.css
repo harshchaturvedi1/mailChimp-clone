@@ -2,6 +2,7 @@
   width: 34rem;
   padding-left: 3rem;
   padding-top: 6.9rem;
+  box-sizing: border-box;
 }
 
 .Top {
