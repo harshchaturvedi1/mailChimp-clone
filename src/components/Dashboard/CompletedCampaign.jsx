@@ -14,7 +14,10 @@ export default function CompletedCampaign() {
                 <div className={style.email}>Email</div>
                 <div className={style.clicks}>Clicks <span>33.33% • </span> Opens <span>33.33%</span> </div>
             </div>
-            <div className={style.right}></div>
+            <div className={style.right}>
+                <div className={style.rightHead}>Campaign Name</div>
+                <div></div>
+            </div>
         </div>
     )
 }
