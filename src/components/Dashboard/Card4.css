@@ -1,0 +1,103 @@
+.card4-container {
+  margin-left: 26.4rem;
+  margin-top: 2.6rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  width: 64.2rem;
+  height: 27.3rem;
+  background: #f6f6f4;
+}
+
+.card4-top {
+  margin-left: 26.4rem;
+  margin-top: 91.9rem;
+  display: flex;
+  width: 64.2rem;
+  justify-content: space-between;
+}
+
+.card4-top-left {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  /* display: flex;
+align-items: flex-end; */
+  letter-spacing: -0.03em;
+}
+.card4-top-right {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.card4-top-right span {
+  color: #007c89;
+}
+
+.card4-header {
+  /* margin-left: 4.34rem;
+  margin-top: 4rem; */
+
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* or 145% */
+
+  /* display: flex;
+  align-items: flex-end; */
+  letter-spacing: -0.01em;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.card4-body {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 1.8rem;
+  /* or 136% */
+  width: 39.182rem;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: -0.03em;
+
+  /* Black - 800 */
+
+  color: #403b3b;
+}
+
+.card4-button {
+  border: 2px solid #007c89;
+  box-sizing: border-box;
+
+  width: 17.782rem;
+  height: 4.1rem;
+  margin-top: 2.7rem;
+}
+
+.card4-span {
+  font-family: Graphik;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  /* display: flex;
+  align-items: flex-end; */
+  letter-spacing: -0.03em;
+  color: #007c89;
+}

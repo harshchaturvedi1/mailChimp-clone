@@ -2,6 +2,8 @@ import { Navbar } from "./Navbar"
 import Card1 from './Card1'
 import Card2 from './Card2'
 import Card3 from './Card3'
+import Card4 from './Card4'
+
 
 import './DashboardMain.css'
 
@@ -9,6 +11,8 @@ export const DashboardMain = () => {
     return (
         <>
             <Navbar />
+            <h1 className="dashboard-header">Ready to get Started?</h1>
+            <div className="dashboard-subheader">Here’s what we recommend you do next</div>
             <Card1 />
             <Card2 />
             <div className="card3-1"><Card3 img={
@@ -19,5 +23,6 @@ export const DashboardMain = () => {
                 "./dashboard-images/Card3_img3.png"} head={"Create a sign up form"} body={"Capture contacts and collect the data you need to grow your Mailchimp audience."} button={"Get Started"} /></div>
             <div className="card3-4"><Card3 img={
                 "./dashboard-images/Card3_img4.png"} head={"Start an automation"} body={"Send timely and perosnalized emails without having to hit the send buttton each time."} button={"Get Started"} /></div>
+            <Card4 />
         </>)
 }
