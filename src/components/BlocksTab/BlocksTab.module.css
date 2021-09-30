@@ -1,0 +1,19 @@
+.navbar {
+  width: 99vw;
+}
+.navbar > img {
+  width: 100%;
+}
+.sidebar {
+  position: absolute;
+  width: 50%;
+}
+.sidebar > img {
+  width: 100%;
+}
+.leftbar {
+  position: absolute;
+  width: 49%;
+  margin-left: 50%;
+  border: 1px solid blue;
+}
