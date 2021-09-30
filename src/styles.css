@@ -6,6 +6,24 @@
   font-family: "Graphik";
   src: local("Graphik"),
     url(./fonts/Graphik-font/Graphik-Regular.ttf) format("truetype");
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url(./fonts/Graphik-font/Graphik-Bold.ttf) format("truetype");
+
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url(./fonts/Graphik-font/Graphik-Medium.ttf) format("truetype");
+
+  font-weight: 500;
 }
 
 body {
