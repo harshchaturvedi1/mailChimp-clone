@@ -1,0 +1,52 @@
+.card4-container {
+  margin-left: 26.4rem;
+  margin-top: 96.7rem;
+  padding: 4rem;
+
+  width: 64.2rem;
+  height: 27.35rem;
+
+  background: #f6f6f4;
+}
+
+.card4-header {
+  /* margin-left: 4.34rem;
+  margin-top: 4rem; */
+
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  /* or 145% */
+
+  /* display: flex;
+  align-items: flex-end; */
+  letter-spacing: -0.01em;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.card4-body {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 1.8rem;
+  /* or 136% */
+  width: 39.182rem;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: -0.03em;
+
+  /* Black - 800 */
+
+  color: #403b3b;
+}
+
+.card4-button {
+  margin: 0;
+}
