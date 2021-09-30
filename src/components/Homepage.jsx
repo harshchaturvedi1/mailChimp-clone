@@ -21,11 +21,11 @@ export default function Homepage() {
   },[])
   return  <div className={styles.main_div}>
   {active1?<div className={styles.purplenot}>
-  <div style={{marginLeft:"45rem",display:"flex",marginTop:"2rem"}}>
-      <div >
+  <div style={{marginLeft:"45rem",display:"flex",marginTop:"2rem"}} className={styles.addyellow}>
+      <div style={{marginLeft:"-2rem",marginRight:"1rem",marginTop:"0.3rem"}}>
         <img src="/notficon.svg"/>
       </div>
-      <div ><a>This page is now available in other languages. Choose a different language.</a></div>
+      <div  ><a>This page is now available in other languages.<span style={{textDecoration:"underline"}}>Choose a different language.</span></a></div>
       <div style={{marginLeft:"20rem"}} onClick={()=>setActive1(false)}>
         <img src="/cross.svg"  />
       </div>
@@ -83,8 +83,8 @@ certain aggregate and anonymized data from your browser independent of your cook
   <div className={styles.audience}>Bring your audience data, marketing channels, and insights together so you can reach your goals faster—all from a single platform.</div>
   <div className={styles.secondlast}>
           <div className={styles.slleft}>
-                    <div className={styles.sllf} style={{marginLeft:"2.25rem",paddingLeft:"1rem"}}>Get your business online</div>
-                    <div className={styles.sllm}>Give your brand a home with a custom domain. Then launch a website to sell products or take appointments, all with built-in marketing tools to help you boost sales and find fans.</div>
+                    <div className={styles.sllf} style={{marginLeft:"3.25rem",paddingLeft:"1rem"}}>Get your business online</div>
+                    <div className={styles.sllm} style={{marginLeft:"6rem"}}>Give your brand a home with a custom domain. Then launch a website to sell products or take appointments, all with built-in marketing tools to help you boost sales and find fans.</div>
                     <div>
                       <button className={styles.btnsl}>Websites and Stores </button>
                     </div>
@@ -97,10 +97,10 @@ certain aggregate and anonymized data from your browser independent of your cook
   </div>
   <div className={styles.secondlast}>
           <div className={styles.slleft}>
-                    <div className={styles.sllf} style={{marginLeft:"2rem"}}>Market your business</div>
+                    <div className={styles.sllf} style={{marginLeft:"1rem"}}>Market your business</div>
                     <div className={styles.sllm}>Send the right messages on all the right channels. Build emails, social ads, landing pages, postcards, and more from one place.</div>
                     <div>
-                      <button className={styles.btnsl}>Marketing campaigns </button>
+                      <button className={styles.btnsl} style={{marginLeft:"-8rem"}}>Marketing campaigns </button>
                     </div>
           </div>
           <div className={styles.slright}>

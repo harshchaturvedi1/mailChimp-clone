@@ -1,3 +1,6 @@
+button{
+    cursor:pointer
+}
 .main_div{
     height:218.3rem;
     background: #FBEECA;
@@ -7,11 +10,15 @@
     height:7.5rem;
     background: #692340;    
     display:flex;
-    font-family:Mulish;
+    font-family:Graphik;
     color:#ffff;
     font-weight: 500;
     font-size: 18px;
 
+}
+.addyellow:hover{
+color:yellow;
+cursor:pointer;
 }
 .navbar{
     height: 8rem;
@@ -54,7 +61,7 @@ margin-top:7rem;
     text-align:left;
 }
 .lefttwo{
- font-family: Graphik;
+ font-family:Graphik;
  text-align:left;
 font-style: normal;
 font-weight: 300;
@@ -76,7 +83,7 @@ color:#ffff;
 border:none;
 }
 .com{
-    font-family: Graphik;
+    font-family:Graphik;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -166,7 +173,7 @@ margin-top:15rem
 .sllm{
     margin-left:5rem;
     text-align:left;
-    font-family: Graphik;
+    font-family:Graphik;
 font-style: normal;
 font-weight: normal;
 font-size: 1.6rem;
