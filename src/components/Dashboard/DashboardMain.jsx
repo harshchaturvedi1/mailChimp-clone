@@ -3,6 +3,7 @@ import Card1 from './Card1'
 import Card2 from './Card2'
 import Card3 from './Card3'
 import Card4 from './Card4'
+import AudienceCard from './AudienceCard'
 import { useState } from 'react'
 
 import './DashboardMain.css'
@@ -36,6 +37,13 @@ export const DashboardMain = () => {
                 <div className="card3-4"><Card3 img={
                     "./dashboard-images/Card3_img4.png"} head={"Start an automation"} body={"Send timely and perosnalized emails without having to hit the send buttton each time."} button={"Get Started"} /></div>
             </div>
-            <Card4 />
+            <div style={{ display: "flex" }}>
+                <Card4 />
+                <AudienceCard />
+            </div>
+            <div className="feedEnd">
+                <div className="feedEndText">You have reached the end of the feed.</div>
+                <div className="feedEndImg" ><img src="./dashboard-images/feedEnd.png" alt="feed end" /></div>
+            </div>
         </>)
 }

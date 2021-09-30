@@ -77,3 +77,21 @@
 .hide-cards {
   display: none;
 }
+
+.feedEnd {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 26.4rem;
+  margin-top: 7rem;
+  width: 64.2rem;
+}
+
+.feedEndText {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  /* identical to box height, or 106% */
+  align-self: center;
+}
