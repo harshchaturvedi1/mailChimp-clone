@@ -1,0 +1,132 @@
+body{
+    font-family: 'Graphik';
+}
+.navbar{
+    width:100vw;
+    height: 6rem;
+    background-color: #241C15;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar>img{
+    position:absolute;
+    top:1rem;
+    left:3.1rem;
+}
+.navbar p{    
+    font-size:1.4rem;
+    font-weight: 500;
+    line-height:1.5rem;
+    margin-top:2.3rem;
+    margin-right: 4.85rem;
+    color:#FFFFFF;
+    cursor: pointer;
+}
+.navbar>div{
+    display: flex;
+}
+.navbar>p{
+    margin-left: 10.4rem;
+}
+
+
+h1{
+    font-size:4.4rem;
+    font-weight: 400;
+    margin: 4rem 3rem;
+}
+.bar{
+    margin-left: 3rem;
+    padding: 0.8rem;
+}
+.bar>span{
+    font-size:1.4rem;
+    line-height:1.7rem;
+    font-weight: 400;
+    letter-spacing:-3%;
+    margin-right: 3.2rem;
+    color: rgba(36,28,21,0.65);
+    cursor: pointer;
+}
+.bar>span:nth-of-type(1){
+    color: #241C15;
+    font-weight: 600;
+    text-decoration: solid underline #007C89 2px;
+    height: 2rem;
+    
+}
+
+.upgrade{
+    display:flex;
+    background-color: #F9E0FA;
+    height:8.7rem;
+    width:60.4rem;
+    margin: 2.8rem 3rem;
+}
+.upgrade>img{
+    padding:0.8rem;
+}
+.upgrade>div{
+    margin-left: 1.2rem;
+}
+.upgrade>div>p:nth-of-type(1){
+    font-size:1.4rem;
+    font-weight: 600;
+    line-height:1.7rem;
+    margin-top: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+.upgrade>div>p:nth-of-type(2){
+    font-size:1.4rem;
+    font-weight: 400;
+    line-height:2rem;
+    width:34.2rem;
+    margin: 0rem;
+}
+.upgrade>button{
+    border:none;
+    background-color:#007C89;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin: 2.6rem 1.6rem;
+    width: 12.8rem;
+}
+
+.main{
+    width:100%;
+    display: grid;
+    grid-template-columns: 17.5% 17.5% 17.5% 17.5% 17%;
+    padding: 0rem 2%;
+    grid-gap: 2%;
+    margin-bottom: 6.4rem;
+}
+.template{
+   cursor: pointer;
+}
+.template>img{
+    height:26.7rem;
+    width:26.4rem;
+}
+.template>p{
+    text-align: center;
+    color:#241C15;
+}
+.template>p:nth-of-type(1){
+    font-size:1.4rem;
+    font-weight: 500;
+    line-height:1.5rem;
+    letter-spacing: -4%;    
+}
+.template>p:nth-of-type(2){
+    font-size:1.4rem;
+    font-weight: 400;
+    line-height:1.8rem;
+    letter-spacing: -4%;    
+}
+h1~p{
+    font-size:2rem;
+    line-height:1.9rem;
+    font-weight: 400;
+    color: #241C15;
+    margin-left: 3rem;
+}
