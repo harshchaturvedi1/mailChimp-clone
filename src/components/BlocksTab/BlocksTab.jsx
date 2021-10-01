@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./BlocksTab.module.css";
+import LeftBar from "./LeftBar";
 export const BlocksTab = () => {
 
     const [showDesc, setshowDesc] = useState(true)
@@ -13,7 +14,7 @@ export const BlocksTab = () => {
 
             {/* leftdiv image */}
             <div className={styles.leftbar}>
-                <img src="./BlocksTabImages/sidebar.png" alt="" />
+                <LeftBar />
             </div>
 
             {/* right div */}
