@@ -8,9 +8,11 @@
   position: absolute;
   width: 50%;
 }
-.leftbar > img {
+
+/* .leftbar > img {
   width: 100%;
-}
+} */
+
 .rightbar {
   position: absolute;
   width: 49%;
