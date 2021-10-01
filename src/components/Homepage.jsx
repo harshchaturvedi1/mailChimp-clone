@@ -4,6 +4,13 @@ export default function Homepage() {
   const [active1, setActive1] = useState(true);
   const [active2, setActive2] = useState(true);
   const [color,setColor]=useState("transparent")
+  const [yellow,setYellow]=useState(false)
+  const toggleYellow=()=>{
+    setYellow(true)
+  }
+  const toggleYellowf=()=>{
+    setYellow(false)
+  }
   const scrollevent=(e)=>{
     if(window.scrollY>100)
     {
@@ -21,13 +28,13 @@ export default function Homepage() {
   },[])
   return  <div className={styles.main_div}>
   {active1?<div className={styles.purplenot}>
-  <div style={{marginLeft:"45rem",display:"flex",marginTop:"2rem"}} className={styles.addyellow}>
-      <div style={{marginLeft:"-2rem",marginRight:"1rem",marginTop:"0.3rem"}}>
-        <img src="/notficon.svg"/>
+  <div style={{marginLeft:"45rem",display:"flex",marginTop:"2rem"}} className={styles.addyellow} onMouseOver={toggleYellow} onMouseOut={toggleYellowf}>
+      <div style={{marginLeft:"-2rem",marginRight:"1rem",marginTop:"0.1rem"}}>
+        <img src={yellow?"/yellowearth.png":"/notficon.svg"}/>
       </div>
       <div  ><a>This page is now available in other languages.<span style={{textDecoration:"underline"}}>Choose a different language.</span></a></div>
       <div style={{marginLeft:"20rem"}} onClick={()=>setActive1(false)}>
-        <img src="/cross.svg"  />
+        <img src={yellow?"/yellowcross.png":"/cross.svg"} />
       </div>
 </div>
   </div>:<></>}

@@ -2,7 +2,7 @@ button{
     cursor:pointer
 }
 .main_div{
-    height:218.3rem;
+    height:200rem;
     background: #FBEECA;
     text-align:center;
 }
@@ -17,13 +17,13 @@ button{
 
 }
 .addyellow:hover{
-color:yellow;
+color: #FFE01B;
 cursor:pointer;
 }
 .navbar{
     height: 8rem;
     position:sticky;
-    padding-top:2rem;
+    padding-top:0.5rem;
     top:0rem;
     /* border:1px solid black; */
     font-family:Graphik;
@@ -94,7 +94,7 @@ border:none;
     margin-top:1rem
 }
 .blackbar{
-    height:7.3rem;
+    height:7rem;
     background: #241C15;
     z-index:2;
     margin-top:-2rem;
@@ -105,7 +105,8 @@ font-size: 1.2rem;
 line-height: 1.7rem;
 letter-spacing: -0.007em;
 color: #FFFFFF;
-text-align:left
+text-align:left;
+padding-bottom:-0.8rem
 }
 .bluediv{
     height:4.5rem;
