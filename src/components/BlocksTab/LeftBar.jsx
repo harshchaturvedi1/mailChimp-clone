@@ -2,6 +2,7 @@ import style from "./LeftBar.module.css"
 
 export default function LeftBar() {
 
+
   return (
     <div className={style.main}>
 
