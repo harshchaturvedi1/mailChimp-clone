@@ -93,11 +93,11 @@ h1{
 }
 
 .main{
-    width:100%;
+    width:100vw;
     display: grid;
-    grid-template-columns: 17.5% 17.5% 17.5% 17.5% 17%;
+    grid-template-columns: 17.5% 17.5% 17.5% 17.5% 17.5%;
     padding: 0rem 2%;
-    grid-gap: 2%;
+    gap: 2%;
     margin-bottom: 6.4rem;
 }
 .template{
