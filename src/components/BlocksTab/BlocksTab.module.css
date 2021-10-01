@@ -53,12 +53,15 @@
 }
 .commentBox {
   background-color: #241c15;
-  height: 114px;
-  width: 94%;
+  /* height: 114px; */
+  width: 80%;
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 3rem;
   border-radius: 5px;
+  padding: 21px 65px 17px 18px;
+  color: #ffffff;
+  letter-spacing: 0em;
 }
 .rightBoxDescription {
   font-family: Roboto;
@@ -66,8 +69,11 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  padding: 21px 70px 53px 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
+}
+.bottomTip {
+  margin-left: 5.9rem;
+  margin-top: -1px;
+}
+.remove:hover {
+  cursor: pointer;
 }

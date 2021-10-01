@@ -1,5 +1,9 @@
+import { useState } from "react";
 import styles from "./BlocksTab.module.css";
 export const BlocksTab = () => {
+
+    const [showDesc, setshowDesc] = useState(true)
+
     return (
         <>
             {/* header */}
@@ -65,26 +69,29 @@ export const BlocksTab = () => {
                     </div>
                 </div>
                 <div class={styles.lineThrough}></div>
-                <div className={styles.commentBox}>
-                    <p className={styles.rightBoxDescription}>
-                        Drag any of the blocks below into the campaign preview on the left.
-                        Go ahead, try dragging a text block to the top of your campaign.
-                    </p>
-                </div>
-                <div>
-                    <svg
-                        width="18"
-                        height="11"
-                        viewBox="0 0 18 11"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M9.77136 10.0647C9.37137 10.5496 8.62843 10.5496 8.22845 10.0647L0.339645 0.5L17.6602 0.5L9.77136 10.0647Z"
-                            fill="#241C15"
-                        />
-                    </svg>
-                </div>
+                {showDesc ?
+                    <div className={styles.commentBox}>
+                        <p className={styles.rightBoxDescription}>
+                            Drag any of the blocks below into the campaign preview on the left.
+                            Go ahead, try dragging a text block to the top of your campaign.
+                        </p>
+                        <p className={styles.remove} onClick={() => setshowDesc(false)}><u> Skip these messages</u></p>
+                    </div> : null}
+                {showDesc ?
+                    <div className={styles.bottomTip}>
+                        <svg
+                            width="18"
+                            height="11"
+                            viewBox="0 0 18 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M9.77136 10.0647C9.37137 10.5496 8.62843 10.5496 8.22845 10.0647L0.339645 0.5L17.6602 0.5L9.77136 10.0647Z"
+                                fill="#241C15"
+                            />
+                        </svg>
+                    </div> : null }
             </div>
         </>
     );
