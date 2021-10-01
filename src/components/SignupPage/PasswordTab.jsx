@@ -1,7 +1,7 @@
 import {useState} from "react";
 import styles from "./Signup.module.css";
 
-export default function PasswordTab({password, setPassword}){
+export default function PasswordTab({password, setPassword, setButton, detail,setDetail}){
     const [low, setLow] = useState(true);
     const [upper, setUpper] = useState(true);
     const [num, setNum] = useState(true);
@@ -43,17 +43,20 @@ export default function PasswordTab({password, setPassword}){
         if(!low&&!upper&&!num&&!spe&&!len){
             e.target.style.outlineColor = '#007C89';
             setPassword(false)
+            setButton(true);
         } else {
             e.target.style.outlineColor = '#F25F25';
-            setPassword(true)
+            setPassword(true);
+            setButton(false);
         }
+        setDetail({...detail, [e.target.name]:e.target.value})
     }
 
     return (
         <>
             <div>
                 <p>Password</p>
-                <input type="password"  onChange={handlePasswordChange}/>
+                <input type="password" name="password" value={detail.password} onChange={handlePasswordChange}/>
                 <br />
                 {password?<span>Please follow the below conventions for writing your password</span>:<></>}
             </div>
