@@ -91,7 +91,23 @@ export const BlocksTab = () => {
                                 fill="#241C15"
                             />
                         </svg>
-                    </div> : null }
+                    </div> : null}
+                
+                <div className={styles.imagesCollection}>
+                    <img src="./BlocksTabImages/textbox.png" alt="" />
+                    <img src="./BlocksTabImages/boxedtext.png" alt="" />
+                    <img src="./BlocksTabImages/divider.png" alt="" />
+                    <img src="./BlocksTabImages/images.png" alt="" />
+                    <img src="./BlocksTabImages/imagegroup.png" alt="" />
+                    <img src="./BlocksTabImages/imagecard.png" alt="" />
+                    <img src="./BlocksTabImages/imagetext.png" alt="" />
+                    <img src="./BlocksTabImages/share.png" alt="" />
+                    <img src="./BlocksTabImages/socialfollow.png" alt="" />
+                    <img src="./BlocksTabImages/buttonimage.png" alt="" />
+                    <img src="./BlocksTabImages/footercardimage.png" alt="" />
+                    <img src="./BlocksTabImages/codecardimage.png" alt="" />
+                    <img src="./BlocksTabImages/videocardimage.png" alt="" />
+                </div>
             </div>
         </>
     );

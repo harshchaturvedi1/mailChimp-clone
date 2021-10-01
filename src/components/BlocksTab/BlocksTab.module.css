@@ -8,9 +8,11 @@
   position: absolute;
   width: 50%;
 }
-.leftbar > img {
+
+/* .leftbar > img {
   width: 100%;
-}
+} */
+
 .rightbar {
   position: absolute;
   width: 49%;
@@ -76,4 +78,13 @@
 }
 .remove:hover {
   cursor: pointer;
+}
+.imagesCollection {
+  margin: 22px 30px 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 0px;
+}
+.imagesCollection > img {
+  margin-top: 24px;
 }
