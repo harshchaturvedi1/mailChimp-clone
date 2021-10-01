@@ -1,0 +1,170 @@
+.LeftNav {
+  /* border: 1px solid black; */
+  width: 25vw;
+  position: absolute;
+}
+.Wrapper {
+  margin-left: 1rem;
+  /* border: 1px solid; */
+  width: 32.8rem;
+}
+.Logo {
+  /* border: 1px solid red; */
+}
+.Logo > svg:nth-child(1) {
+  /* border: 1px solid blue; */
+  margin: 15px 15px 20px 11px;
+}
+.Email,
+.website {
+  /* border: 1px solid red; */
+  margin: 0 4.7rem 0 2.1rem;
+  padding: 1.2rem 0 1.2rem 1.6rem;
+  width: 27rem;
+  height: 3rem;
+  font-family: Source Serif Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.Email > svg {
+  /* border: 1px solid; */
+  margin-left: 14rem;
+}
+.dropDown {
+  /* border: 1px solid pink; */
+  margin: 0 4.7rem 0 4rem;
+  font-family: Graphik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.dropDown > div {
+  /* border: 1px solid black; */
+  padding: 1.8rem 0 1.8rem 4.5rem;
+}
+.Regular {
+  background: #efeeea;
+}
+.Regular > svg {
+  margin-left: 9.5rem;
+}
+.lastMiddle {
+  height: 1px;
+  width: 32rem;
+  margin-left: 1rem;
+  background-color: #dedddc;
+}
+.website > svg {
+  margin-left: 12rem;
+}
+.bottomDiv {
+  /* border: 1px solid blue; */
+  width: 26.5rem;
+  margin: 3.8rem 4.7rem 0 2.1rem;
+  padding: 1.2rem 0 1.2rem 1.6rem;
+  font-family: Graphik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bottomDiv > div > svg {
+  /* border: 1px solid; */
+  margin-left: 11.6rem;
+}
+.bottomDiv > div:nth-child(2) {
+  margin-top: 3.5rem;
+}
+
+.Container {
+  background: #f6f6f4;
+  width: 74vw;
+  height: 100vh;
+  margin-left: 26vw;
+  position: absolute;
+}
+
+.createEmail {
+  height: 60px;
+  width: 336px;
+  margin-left: 252px;
+  margin-top: 182px;
+  font-family: Source Serif Pro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #241c15;
+}
+.description {
+  height: 52px;
+  width: 507px;
+  margin-left: 252px;
+  margin-top: 13px;
+  font-family: Graphik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #403b3b;
+}
+.inputBoxLabel {
+  height: 26px;
+  width: 553px;
+  margin-left: 252px;
+  margin-top: 2px;
+  font-family: Graphik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #2c2c2c;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.inputBoxLabel > p:nth-child(2) {
+  text-align: right;
+  font-weight: 300;
+  /* border: 1px solid; */
+}
+.inputBox > input {
+  width: 546px;
+  margin-left: 252px;
+  margin-top: 14px;
+  height: 44px;
+  outline: none;
+  padding-left: 16px;
+  font-size: 16px;
+}
+.Button {
+  height: 42px;
+  width: 93px;
+  margin-left: 252px;
+  margin-top: 36px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Graphik;
+  outline: none;
+  border-radius: 0px;
+  padding: 12px, 34px, 12px, 34px;
+  background: #007c89;
+  color: #fff;
+}
+.Button:hover {
+  cursor: pointer;
+}

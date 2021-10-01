@@ -170,7 +170,7 @@ export const Navbar = () => {
             </svg>
           </div>
 
-          <NameInitial>
+          <NameInitial><p>H</p>
           </NameInitial>
         </RightDiv>
       </MainDiv>
