@@ -1,224 +1,35 @@
-button{
-    cursor:pointer
-}
-.main_div{
-    height:200rem;
-    background: #FBEECA;
-    text-align:center;
-}
-.purplenot{
-    height:7.5rem;
-    background: #692340;    
-    display:flex;
-    font-family:Graphik;
-    color:#ffff;
-    font-weight: 500;
-    font-size: 18px;
-
-}
-.addyellow:hover{
-color: #FFE01B;
-cursor:pointer;
-}
-.navbar{
-    height: 8rem;
-    position:sticky;
-    padding-top:0.5rem;
-    top:0rem;
-    /* border:1px solid black; */
-    font-family:Graphik;
-    font-weight: 500;
-font-size: 16px;
-line-height: 18px;
-letter-spacing: -0.04em;
-}
-.mainpage{
-display:flex;
-}
-.mainleft{
- width:55rem;
-height:37.8rem;
-margin-left:15rem;
-/* border:1px solid black; */
-display:flex;
-flex-direction:column;
-margin-top:7rem;
-}
-.mainright{
-    width:44.7rem;
-    height:37.8rem;
-    /* border:1px solid black; */
-    margin-top:8rem
-}
-.leftone{
-    font-family: Source Serif Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 5.4rem;
-    line-height: 5.8rem;
-    letter-spacing: 0.005em;    
-    color: #241C15;
-    text-align:left;
-}
-.lefttwo{
- font-family:Graphik;
- text-align:left;
-font-style: normal;
-font-weight: 300;
-font-size: 2.4rem;
-line-height: 132.8%;
-letter-spacing: 0.005em;
-margin-top:2rem;
-}
-.leftthree{
-    display:flex;
-    margin-top:4.5rem;
-  
-}
-.btnleft{
-    width: 12.2rem;
-height: 4.3rem;
-background: #007C89;
-color:#ffff;
-border:none;
-}
-.com{
-    font-family:Graphik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.035em;
-    color: #007C89;
-    margin-left:2rem;
-    margin-top:1rem
-}
-.blackbar{
-    height:7rem;
-    background: #241C15;
-    z-index:2;
-    margin-top:-2rem;
-    font-family: Graphik;
-font-style: normal;
-font-weight: 500;
-font-size: 1.2rem;
-line-height: 1.7rem;
-letter-spacing: -0.007em;
-color: #FFFFFF;
-text-align:left;
-padding-bottom:-0.8rem
-}
-.bluediv{
-    height:4.5rem;
-    background: #C5DBF2;    
-font-family: Graphik;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-letter-spacing: -0.04em;
-color: #000000;
-display:flex;
-padding-top:2rem
-}
-.Doit{
-    font-family: Source Serif Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 5.4rem;
-line-height: 5.8rem;
-letter-spacing: 0.005em;
-color: #241C15;
-margin-top:4rem;
-margin-bottom:3rem
-}
-.audience{
-    font-family: Graphik;
-    width:62rem;
-    margin:0 auto;
-    margin-bottom:11rem;
-font-style: normal;
-font-weight: normal;
-font-size: 1.6rem;
-line-height: 2.3rem;
-text-align: center;
-letter-spacing: 0.005em;
-color: #403B3B;
-}
-.secondlast{
-    display:flex;
-    /* border:1px solid black; */
-    width:100rem;
-    margin :0 auto;
-    height:50rem;
-}
-.slleft{
-    width:39rem;
-    display:flex;
-    flex-direction:column;
-}
-.sllf{
-    font-family: Source Serif Pro;
-    width:38rem;
-font-style: normal;
-font-weight: normal;
-font-size: 3.2rem;
-line-height: 108.3%;
-letter-spacing: 0.005em;
-color: #241C15;
-/* border:1px solid black; */
-margin-top:15rem
-}
-.slright{
-    margin-left:13rem;
-}
-.sllm{
-    margin-left:5rem;
-    text-align:left;
-    font-family:Graphik;
-font-style: normal;
-font-weight: normal;
-font-size: 1.6rem;
-line-height: 2rem;
-letter-spacing: 0.005em;
-color: #403B3B;
-margin-top:1rem
-}
-.btnsl{
- width: 215px;
-height: 58px;
-border: 2px solid #D6DDC0;
-background:transparent;
-margin-top:2rem;
-margin-left:-5rem;
-font-weight: 500;
-color:#004E56;
-font-size: 16px;
-}
 button {
   cursor: pointer;
 }
 .main_div {
-  height: 218.3rem;
+  height: 200rem;
   background: #fbeeca;
   text-align: center;
 }
 .purplenot {
   height: 7.5rem;
+  width: 100vw;
   background: #692340;
   display: flex;
   font-family: Graphik;
   color: #ffff;
   font-weight: 500;
   font-size: 18px;
+  align-items: center;
+  border: 1px solid red;
+}
+.crossImg {
+  /* border: 2px solid red; */
+  margin-left: 25vw;
 }
 .addyellow:hover {
-  color: yellow;
+  color: #ffe01b;
   cursor: pointer;
 }
 .navbar {
   height: 8rem;
   position: sticky;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   top: 0rem;
   /* border:1px solid black; */
   font-family: Graphik;
@@ -283,6 +94,204 @@ button {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.035em;
+  color: #007c89;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.blackbar {
+  height: 7rem;
+  background: #241c15;
+  z-index: 2;
+  margin-top: -2rem;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: -0.007em;
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: -0.8rem;
+}
+.bluediv {
+  height: 4.5rem;
+  background: #c5dbf2;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  display: flex;
+  padding-top: 2rem;
+}
+.Doit {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.4rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.005em;
+  color: #241c15;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.audience {
+  font-family: Graphik;
+  width: 62rem;
+  margin: 0 auto;
+  margin-bottom: 11rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #403b3b;
+}
+.secondlast {
+  display: flex;
+  /* border:1px solid black; */
+  width: 100rem;
+  margin: 0 auto;
+  height: 50rem;
+}
+.slleft {
+  width: 39rem;
+  display: flex;
+  flex-direction: column;
+}
+.sllf {
+  font-family: Source Serif Pro;
+  width: 38rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 108.3%;
+  letter-spacing: 0.005em;
+  color: #241c15;
+  /* border:1px solid black; */
+  margin-top: 15rem;
+}
+.slright {
+  margin-left: 13rem;
+}
+.sllm {
+  margin-left: 5rem;
+  text-align: left;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.005em;
+  color: #403b3b;
+  margin-top: 1rem;
+}
+.btnsl {
+  width: 215px;
+  height: 58px;
+  border: 2px solid #d6ddc0;
+  background: transparent;
+  margin-top: 2rem;
+  margin-left: -5rem;
+  font-weight: 500;
+  color: #004e56;
+  font-size: 16px;
+}
+button {
+  cursor: pointer;
+}
+.main_div {
+  background: #fbeeca;
+  width: 100vw;
+  text-align: center;
+}
+.purplenot {
+  height: 7.5rem;
+  background: #692340;
+  display: flex;
+  font-family: Graphik;
+  color: #ffff;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+}
+.addyellow:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.navbar {
+  height: 8rem;
+  position: sticky;
+  padding-top: 0.1rem;
+  top: 0rem;
+  /* border:1px solid black; */
+  font-family: Graphik;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  width: 100vw;
+}
+.mainpage {
+  display: flex;
+}
+.mainleft {
+  width: 55rem;
+  height: 37.8rem;
+  margin-left: 15rem;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+.mainright {
+  width: 44.7rem;
+  height: 37.8rem;
+  /* border:1px solid black; */
+  margin-top: 8rem;
+}
+.leftone {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.4rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.005em;
+  color: #241c15;
+  text-align: left;
+}
+.lefttwo {
+  font-family: Graphik;
+  text-align: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 132.8%;
+  letter-spacing: 0.005em;
+  margin-top: 2rem;
+}
+.leftthree {
+  display: flex;
+  margin-top: 4.5rem;
+}
+.btnleft {
+  width: 12.2rem;
+  height: 4.3rem;
+  background: #007c89;
+  color: #ffff;
+  border: none;
+}
+.com {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.015em;
   color: #007c89;
   margin-left: 2rem;
   margin-top: 1rem;
@@ -387,7 +396,8 @@ button {
   color: #004e56;
   font-size: 16px;
 }
-a{
+.btnleft > a,
+.navSingup > a {
   text-decoration: none;
   color: white;
 }

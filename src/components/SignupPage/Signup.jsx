@@ -65,12 +65,8 @@ export default function Signup(){
         setDetail({...detail, [e.target.name]:e.target.value})
     }
 
-    const handleStatus = ()=>{
-    }
-
     const submitData = (e)=>{
         e.preventDefault();
-        console.log("hi");
         axios.post("http://localhost:3001/create", detail);
     }
 
@@ -82,9 +78,9 @@ export default function Signup(){
         <div className={styles.signup}>
             <img src="/images/chimpLogo.svg" alt="" />
             <div className={styles.signupComponent}>
-                <h3>Welcome to Mailchimp</h3>
+                <h3 className={styles.h3}>Welcome to Mailchimp</h3>
                 <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp’s Marketing Platform. Already have an account? <span>Log in</span></p>
-                <div className={styles.form}>
+                <div className={styles.formS}>
                     <div>
                         <p>Email</p>
                         <input type="email" name="email" value={detail.email} onChange={handleEmail}  required/>
@@ -95,11 +91,11 @@ export default function Signup(){
                         <p>Username</p>
                         <input type="text" name="username" value={detail.username} onChange={handleUser} onClick={()=>setUsername(true)} onBlur={()=>setUsername(false)}/>
                         <br />
-                        {username ? <h5>Choose a username that contains only letters and numbers, or use your email address. This is for login only.</h5>:
+                        {username ? <h5 className={styles.h5}>Choose a username that contains only letters and numbers, or use your email address. This is for login only.</h5>:
                         user?<span>Another user with this username already exists. Maybe it’s your evil twin. Spooky</span>:<></>}
                     </div>
                     <PasswordTab password={password} setPassword={setPassword} setButton={setButton} detail={detail} setDetail={setDetail}/>
-                    <Button onClick={submitData} type="submit"><Link to="/dashboard">Sign Up</Link></Button>
+                    <Button className={styles.signupBtn} onClick={submitData} type="submit"><Link to="/dashboard" >Sign Up</Link></Button>
                     <CheckBox type="checkbox" onClick={handleCheck} />
                     <p>I don't want to receive updates from Mailchimp related to marketing best practices, product and feature updates, and promotions.</p>
                 </div>

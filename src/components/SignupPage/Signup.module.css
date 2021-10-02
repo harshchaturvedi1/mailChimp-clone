@@ -1,6 +1,6 @@
 .signup{
    background: linear-gradient(to right, #FFE01B 0 0.48vw, white 0.48vw 74.5vw , #FFE01B 74.5vw 100vw );
-   height:118vh;
+   height:125vh;
    width: 100%;
    font-family: "Graphik";
 }
@@ -14,16 +14,14 @@
 .image{
     height: 72.9rem;
     width: 42rem;
-    position:absolute;
-    top: 9rem;
-    left:100.2rem;
+    float: right;
 }
 .signupComponent{
     position: absolute;
     left: 15vw;
     top: 5.7rem;
 }
-h3{
+.h3{
     font-family: 'Source Serif Pro Regular';
     font-weight: 400;
     font-size: 4.4rem; 
@@ -40,15 +38,17 @@ p{
     font-size: 1.6rem;
     line-height: 2.3rem;
 }
-.form{
+.formS{
     margin-top: 5.7rem;
 }
-.form>div>p{
+.formS>div>p:nth-of-type(1){
     font-weight: 500;
     letter-spacing:-3%;
     line-height: 1.2rem;
+    margin-bottom: 0.8rem;
+    margin-top:1.6rem;
 }
-h5{
+.h5{
     width:47.3rem;
     font-weight: 400;
     font-size: 1.2rem;
@@ -56,14 +56,14 @@ h5{
     margin: 0rem;
     margin-bottom:3.2rem;
 }
-.form>div>span{
+.formS>div>span{
     line-height:3rem;
     font-size: 1.2rem;
     font-weight: 500;
     color: #A73205;
     letter-spacing:0.5%;
 }
-.form>div:nth-of-type(2)>p:nth-of-type(2){
+.formS>div:nth-of-type(2)>p:nth-of-type(2){
     width: 47.1rem;
     line-height:2.3rem;
     font-size: 1.3rem;
@@ -71,7 +71,7 @@ h5{
     margin-top:0;
     letter-spacing:0.5%;
 }
-.form>div>input{
+.formS>div>input{
     border: 1px solid rgba(36, 28, 21, 0.3);
     box-sizing: border-box;
     border-radius: 2px;
@@ -81,7 +81,7 @@ h5{
     padding-left: 1.6rem;
     font-size: 1.6rem;
 }
-.form>p{
+.formS>p{
     color: #241C15;
     margin: 0rem;
     font-size: 1.3rem;
@@ -97,7 +97,7 @@ input::-ms-reveal,
 input::-ms-clear {
     display: none;
 }
-ul {
+/* ul {
     margin-top: 2.5rem;
     margin-bottom: 3.4rem;
     display:grid;
@@ -120,7 +120,7 @@ li{
     font-size: 1.4rem;
     line-height:2.3rem;
     font-weight: 400;
-}
+} */
 .invalid{
     color: grey;
 }
@@ -151,8 +151,9 @@ p>span{
     font-size: 1.2rem;
     color:#241C15;
     left:-17.2rem;
+    text-decoration: none !important;
 }
-a{
+.signupBtn>a{
     text-decoration: none;
-    color:grey
+    color: grey;
 }
