@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./BlocksTab.module.css";
+import { Navbar } from "./BlockTabNavbar";
 import LeftBar from "./LeftBar";
 export const BlocksTab = () => {
 
@@ -21,9 +22,7 @@ export const BlocksTab = () => {
     return (
         <>
             {/* header */}
-            <div className={styles.navbar}>
-                <img src="./BlocksTabImages/navbar.png" alt="" />
-            </div>
+                <Navbar />
 
             {/* leftdiv image */}
             <div className={styles.leftbar}>

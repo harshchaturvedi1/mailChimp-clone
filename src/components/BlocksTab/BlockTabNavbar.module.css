@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainDiv {
+  border: 1px solid;
+  background: #241c15;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 50%;
+  height: 60px;
+  font-size: 14px;
+  color: #fff;
+}
+.logoDiv {
+  display: flex;
+  margin-left: 3.1rem;
+}
+.logoDiv > svg {
+  margin-right: 3.4rem;
+  margin-top: 6px;
+}
+.logoDiv > p {
+  margin-top: 12px;
+}
+.navigationDiv {
+  display: flex;
+  justify-content: right;
+  margin-right: 3rem;
+}
+.navigationDiv > p {
+  padding: 8px 10px;
+  margin: 0 0px 0 30px;
+}
+.navigationDiv > p > svg {
+  margin-left: 6px;
+}
+.Button {
+  background: #007c89;
+  border-radius: 2px;
+}
+p:hover {
+  cursor: pointer;
+}
