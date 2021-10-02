@@ -57,6 +57,7 @@
   height: 41px;
   border: none;
   background: #007c89;
+  text-decoration: none;
 }
 .spanCard2 {
   width: 74px;
@@ -73,7 +74,7 @@
 
   color: #ffffff;
 }
-a{
+.spanCard2>a{
   text-decoration: none;
-  color: white !important;
+  color: white;
 }

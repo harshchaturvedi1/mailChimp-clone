@@ -65,12 +65,8 @@ export default function Signup(){
         setDetail({...detail, [e.target.name]:e.target.value})
     }
 
-    const handleStatus = ()=>{
-    }
-
     const submitData = (e)=>{
         e.preventDefault();
-        console.log("hi");
         axios.post("http://localhost:3001/create", detail);
     }
 
@@ -99,7 +95,7 @@ export default function Signup(){
                         user?<span>Another user with this username already exists. Maybe it’s your evil twin. Spooky</span>:<></>}
                     </div>
                     <PasswordTab password={password} setPassword={setPassword} setButton={setButton} detail={detail} setDetail={setDetail}/>
-                    <Button onClick={submitData} type="submit"><Link to="/dashboard">Sign Up</Link></Button>
+                    <Button className={styles.signupBtn} onClick={submitData} type="submit"><Link to="/dashboard" >Sign Up</Link></Button>
                     <CheckBox type="checkbox" onClick={handleCheck} />
                     <p>I don't want to receive updates from Mailchimp related to marketing best practices, product and feature updates, and promotions.</p>
                 </div>

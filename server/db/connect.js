@@ -1,12 +1,9 @@
 const mongoose = require('mongoose');
 
-const DB = process.env.DATABASE;
 
-mongoose.connect(DB,{
+mongoose.connect("mongodb+srv://Shah1117:Shah1117@mailchimp.8qw7x.mongodb.net/MailChimp?retryWrites=true&w=majority",{
     useNewUrlParser: true,
-    // useCreateIndex: true,
-    useUnifiedTopology: true,
-    // useFindAndModify: false
+    useUnifiedTopology: true
 }).then(()=>{
     console.log("connected");
 }).catch((err)=>{

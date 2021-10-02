@@ -43,7 +43,7 @@ export default function Homepage() {
     <div style={{marginLeft:"-1rem"}}><img src="/logo2.png"/></div>
     <div style={{marginLeft:"30rem"}}><img src="/logo3.png"/></div>
     <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button style={{height:"4.3rem",width:"10.1rem",border:" 0.8px solid #241C15",background:"transparent"}}>Log In</button></div>
-    <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button style={{height:"4.3rem",width:"12.2rem",background:" #007C89",color:"#ffff",border:"none"}}><Link to="/signup">Sign Up</Link></button></div>
+    <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button className={styles.btn}  style={{height:"4.3rem",width:"12.2rem",background:" #007C89",color:"#ffff",border:"none"}}><Link to="/signup">Sign Up</Link></button></div>
   </div>
   </div>
   <div className={styles.mainpage}>
