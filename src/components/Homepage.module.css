@@ -2,8 +2,8 @@ button {
   cursor: pointer;
 }
 .main_div {
-  height: 218.3rem;
   background: #fbeeca;
+  width: 100vw;
   text-align: center;
 }
 .purplenot {
@@ -14,6 +14,9 @@ button {
   color: #ffff;
   font-weight: 500;
   font-size: 18px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: -0.015em;
 }
 .addyellow:hover {
   color: yellow;
@@ -22,7 +25,7 @@ button {
 .navbar {
   height: 8rem;
   position: sticky;
-  padding-top: 2rem;
+  padding-top: 0.1rem;
   top: 0rem;
   /* border:1px solid black; */
   font-family: Graphik;
@@ -30,6 +33,7 @@ button {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: -0.04em;
+  width: 100vw;
 }
 .mainpage {
   display: flex;
@@ -86,7 +90,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.015em;
   color: #007c89;
   margin-left: 2rem;
   margin-top: 1rem;
@@ -191,7 +195,7 @@ button {
   color: #004e56;
   font-size: 16px;
 }
-a{
+a {
   text-decoration: none;
   color: white;
 }
