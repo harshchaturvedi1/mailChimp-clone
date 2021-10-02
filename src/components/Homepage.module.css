@@ -14,7 +14,15 @@ button{
   color:#ffff;
   font-weight: 500;
   font-size: 18px;
-
+  align-items: center;
+  border: 1px solid red;
+}
+.crossImg{
+  border: 1px solid black;
+  float: right;
+}
+.crossImg>img{
+  
 }
 .addyellow:hover{
   color: #FFE01B;

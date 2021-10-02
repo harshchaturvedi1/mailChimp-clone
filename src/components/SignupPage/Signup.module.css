@@ -97,7 +97,7 @@ input::-ms-reveal,
 input::-ms-clear {
     display: none;
 }
-ul {
+/* ul {
     margin-top: 2.5rem;
     margin-bottom: 3.4rem;
     display:grid;
@@ -120,7 +120,7 @@ li{
     font-size: 1.4rem;
     line-height:2.3rem;
     font-weight: 400;
-}
+} */
 .invalid{
     color: grey;
 }

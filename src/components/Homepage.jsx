@@ -65,13 +65,15 @@ export default function Homepage() {
               <p>&nbsp; This page is now available in other languages.&nbsp;</p>
               <p style={{fontSize:"16px", borderBottom:changeColor ? "1px solid yellow":null}}> Choose a different language.</p>
             </div>
-            <div
-              style={{ marginLeft: "35rem" }}
+            
+            
+          </div>
+          <div
+              className={styles.crossImg}
               onClick={() => setActive1(false)}
             >
-              <img src="/cross.svg" />
+            <img src="/cross.svg" />
             </div>
-          </div>
         </div>
       ) : (
         <></>
