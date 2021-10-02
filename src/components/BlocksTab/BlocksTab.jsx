@@ -4,6 +4,19 @@ import LeftBar from "./LeftBar";
 export const BlocksTab = () => {
 
     const [showDesc, setshowDesc] = useState(true)
+    const [isHidden, setHidden] = useState({})
+    const [border, setBorder] = useState({})
+    const [path, setPath] = useState("./BlocksTabImages/images.png")
+    const [imgStyle, setImgStyle] = useState({})
+
+    function handleClick() {
+        setHidden({ border: "2px dashed #007C89", borderRadius: "4px" })
+        setPath("./BlocksTabImages/imgClick.png")
+        setImgStyle({
+            width: "112px"
+        })
+        setBorder({ border: "2px dashed #007C89" })
+    }
 
     return (
         <>
@@ -14,7 +27,7 @@ export const BlocksTab = () => {
 
             {/* leftdiv image */}
             <div className={styles.leftbar}>
-                <LeftBar />
+                <LeftBar isHidden={isHidden} setHidden={setHidden} border={border} />
             </div>
 
             {/* right div */}
@@ -93,12 +106,12 @@ export const BlocksTab = () => {
                             />
                         </svg>
                     </div> : null}
-                
+
                 <div className={styles.imagesCollection}>
                     <img src="./BlocksTabImages/textbox.png" alt="" />
                     <img src="./BlocksTabImages/boxedtext.png" alt="" />
                     <img src="./BlocksTabImages/divider.png" alt="" />
-                    <img src="./BlocksTabImages/images.png" alt="" />
+                    <img onClick={handleClick} style={imgStyle} src={path} alt="" />
                     <img src="./BlocksTabImages/imagegroup.png" alt="" />
                     <img src="./BlocksTabImages/imagecard.png" alt="" />
                     <img src="./BlocksTabImages/imagetext.png" alt="" />
