@@ -4,8 +4,8 @@
     border-right: 1px solid rgba(184, 184, 184, 0.6);
     display:flex;
     flex-direction:column;
-    position:sticky;
-    top:0
+    position:fixed;
+    margin-left:9.7rem
 }
 .campaign{
     font-family: Source Serif Pro;
@@ -76,7 +76,8 @@ color: #241C15;
 .last{
     width:105rem;
     display:flex;
-    flex-direction:column
+    flex-direction:column;
+    margin-left:22.7rem
 }
 .lastfirst_div{
     height:7.7rem;
@@ -94,7 +95,7 @@ font-size: 1.6rem;
 line-height: 1.8rem;
 color: #241C15;
 margin-top:2.2rem;
-margin-bottom:-0.7rem
+margin-bottom:-0.7rem;margin-right:1rem
 }
 .drfemail{
     font-family: Graphik;
@@ -127,7 +128,7 @@ line-height: 1.5rem;
 letter-spacing: -0.03em;
 text-decoration: underline;
 color: #007C89;
-margin-left:54rem;
+margin-right:"";
 margin-top:3.2rem;
 }
 .schbtn{
@@ -154,7 +155,7 @@ font-weight: 500;
 font-size: 1.4rem;
 line-height: 1.5rem;
 color: #C0BBB9;
-margin-left:2.3rem;
+/* margin-right:-400px; */
 margin-top:2.3rem;
 background:transparent
 }
@@ -233,7 +234,7 @@ color: #241C15;
 .llfbtn{
     background: #F4F4F4;
     border:none;
-    width:11rem;
+    /* width:11rem; */
 border-radius: 2px;
 font-family: Graphik;
 font-style: normal;
@@ -244,7 +245,8 @@ height:3.5rem;
 letter-spacing: -0.03em;
 color: #57514A;
 margin-top:2.5rem;
-margin-left:29.3rem;
+margin-left:27.7rem;
+padding:1rem 1.6rem;
 }
 .lls{
     display:flex;
@@ -262,9 +264,9 @@ line-height: 1.5rem;
 letter-spacing: -0.03em;
 color: #FFFFFF;
 border:none;
-width:11rem;
+/* width:11rem; */
 height:3.5rem;
-
+padding:1rem 1.6rem
 }
 .from{
     font-family: Graphik;
@@ -309,7 +311,7 @@ margin-left:30rem;
     font-family: Graphik;
 font-style: normal;
 font-weight: 500;
-font-size: 1.4rem;
+font-size: 2rem;
 line-height: 1.5rem;
 letter-spacing: -0.055em;
 color: #706B67;
@@ -366,7 +368,7 @@ cursor:pointer;
 .subbtn{
     background: #716B67;
 border-radius: 0.2rem;
-width:11rem;
+/* width:11rem; */
 height:3.5rem;
 font-family: Graphik;
 font-style: normal;
@@ -377,7 +379,8 @@ letter-spacing: -0.03em;
 color: #FFFFFF;
 border:none;
 margin-top:2.5rem;
-margin-left:50rem 
+margin-left:52.4rem ;
+padding:1rem 1.6rem;
 }
 .llfo{
     display:flex;
