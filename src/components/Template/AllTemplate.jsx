@@ -1,4 +1,5 @@
-import styles from "./Template.module.css"
+import styles from "./Template.module.css";
+import {Link} from "react-router-dom";
 
 export default function AllTemplates({data}){
     
@@ -6,11 +7,11 @@ export default function AllTemplates({data}){
         <>
          {data.map((el)=>{
              return(
-                <div className={styles.template}>
+                <Link to="/blocktab" className={styles.template} >
                   <img src={`/images/${el.img}`} alt=""/>
                   <p>{el.p1}</p>
                   <p>{el.p2}</p>
-                </div>
+                </Link>
              )
          })}
         </>

@@ -1,24 +1,29 @@
+import axios from "axios";
 import styles from "./Signup.module.css";
 import {useState} from "react";
 import styled from "styled-components";
 import PasswordTab from "./PasswordTab";
+import {Link} from "react-router-dom";
 
 export default function Signup(){
+    var pattern = /^[^ ]+@[^]+\.[a-z]{2,3}$/;
     const [email, setEmail] = useState(false);
     const [username, setUsername] = useState(false);
     const [password, setPassword] = useState(false)
     const [user, setUser] = useState(false);
-    const buttonStatus = !email&&!user&&!password;
-    var pattern = /^[^ ]+@[^]+\.[a-z]{2,3}$/;
-
-    console.log(buttonStatus);
-
+    const [button, setButton] = useState(false);
+    const [detail, setDetail] = useState({
+        email:"",
+        username:"",
+        password:""
+    });
+    
     const Button = styled.button`
         height:4.5rem;
         width: 13.7rem;
-        background-color:${buttonStatus?"#007C89":"white"};
-        border: 1px solid ${buttonStatus?"#007C89":"#BDBBB9"};
-        color: ${buttonStatus?"#FFFFFF":"#BDBBB9"};
+        background-color:${button?"#007C89":"white"};
+        border: 1px solid ${button?"#007C89":"#BDBBB9"};
+        color: ${button?"#FFFFFF":"#BDBBB9"};
         font-size: 1.6rem;
         letter-spacing: -3%;
         font-weight: 500;
@@ -41,9 +46,15 @@ export default function Signup(){
             setEmail(true);
             e.target.style.outlineColor = '#F25F25';
         }
+        setDetail({...detail, [e.target.name]:e.target.value})
     }
 
-    const handleUser = ()=>{
+    const handleUser = (e)=>{
+        fetch("/users")
+        .then((data)=>data.json())
+        .then((data)=>{
+            console.log(data);
+        })
         // if(e.target.value.match()|| e.target.value===""){
         //     setEmail(false);
         //     e.target.style.outlineColor = '#007C89';
@@ -51,10 +62,16 @@ export default function Signup(){
         //     setEmail(true);
         //     e.target.style.outlineColor = '#F25F25';
         // }
-
+        setDetail({...detail, [e.target.name]:e.target.value})
     }
 
     const handleStatus = ()=>{
+    }
+
+    const submitData = (e)=>{
+        e.preventDefault();
+        console.log("hi");
+        axios.post("http://localhost:3001/create", detail);
     }
 
     const handleCheck = (e)=>{
@@ -70,19 +87,19 @@ export default function Signup(){
                 <div className={styles.form}>
                     <div>
                         <p>Email</p>
-                        <input type="email" onChange={handleEmail}  required/>
+                        <input type="email" name="email" value={detail.email} onChange={handleEmail}  required/>
                         <br />
                         {email?<span>Please enter a valid email</span>:<></>}
                     </div>
                     <div>
                         <p>Username</p>
-                        <input type="text" onChange={handleUser} onClick={()=>setUsername(true)} onBlur={()=>setUsername(false)}/>
+                        <input type="text" name="username" value={detail.username} onChange={handleUser} onClick={()=>setUsername(true)} onBlur={()=>setUsername(false)}/>
                         <br />
                         {username ? <h5>Choose a username that contains only letters and numbers, or use your email address. This is for login only.</h5>:
                         user?<span>Another user with this username already exists. Maybe it’s your evil twin. Spooky</span>:<></>}
                     </div>
-                    <PasswordTab password={password} setPassword={setPassword}/>
-                    <Button type="submit">Sign Up</Button>
+                    <PasswordTab password={password} setPassword={setPassword} setButton={setButton} detail={detail} setDetail={setDetail}/>
+                    <Button onClick={submitData} type="submit"><Link to="/dashboard">Sign Up</Link></Button>
                     <CheckBox type="checkbox" onClick={handleCheck} />
                     <p>I don't want to receive updates from Mailchimp related to marketing best practices, product and feature updates, and promotions.</p>
                 </div>
