@@ -1,0 +1,101 @@
+.main {
+  width: 100%;
+  margin: auto;
+  /* border: 1px dashed black; */
+}
+
+.top {
+  background-color: #f7f7f7;
+  padding-top: 5rem;
+  padding-bottom: 4.8rem;
+}
+
+.logo {
+  width: 196px;
+  margin: auto;
+  margin-bottom: 2rem;
+  /* border: 1px solid blue; */
+}
+
+.header {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #000000;
+}
+
+.body {
+  padding-top: 5rem;
+  padding-bottom: 4.8rem;
+}
+
+.mainImg {
+  width: 500px;
+  margin: auto;
+}
+
+.mainImg img {
+  width: 100%;
+}
+
+.feature {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  width: 500px;
+  margin: auto;
+  margin-top: 2.4rem;
+  color: #241c15;
+}
+
+.text {
+  width: 500px;
+  margin: auto;
+  margin-top: 2.4rem;
+
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.button {
+  width: 171px;
+  height: 50px;
+  margin: auto;
+  margin-top: 4rem;
+  background: #00addb;
+  opacity: 0.6;
+  border-radius: 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button span {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer img {
+  width: 100%;
+}
