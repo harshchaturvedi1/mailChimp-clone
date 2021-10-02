@@ -73,3 +73,7 @@
 
   color: #ffffff;
 }
+a{
+  text-decoration: none;
+  color: white !important;
+}

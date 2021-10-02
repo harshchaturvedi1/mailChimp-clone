@@ -1,5 +1,7 @@
 import styles from "./Homepage.module.css";
 import { useState,useEffect } from "react";
+import {Link} from "react-router-dom";
+
 export default function Homepage() {
   const [active1, setActive1] = useState(true);
   const [active2, setActive2] = useState(true);
@@ -48,7 +50,7 @@ export default function Homepage() {
     <div style={{marginLeft:"-1rem"}}><img src="/logo2.png"/></div>
     <div style={{marginLeft:"30rem"}}><img src="/logo3.png"/></div>
     <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button style={{height:"4.3rem",width:"10.1rem",border:" 0.8px solid #241C15",background:"transparent"}}>Log In</button></div>
-    <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button style={{height:"4.3rem",width:"12.2rem",background:" #007C89",color:"#ffff",border:"none"}}>Sign Up</button></div>
+    <div style={{marginLeft:"3rem",marginTop:"-1rem"}}><button style={{height:"4.3rem",width:"12.2rem",background:" #007C89",color:"#ffff",border:"none"}}><Link to="/signup">Sign Up</Link></button></div>
   </div>
   </div>
   <div className={styles.mainpage}>
@@ -62,7 +64,7 @@ export default function Homepage() {
         marketing platform.
         </div>
         <div className={styles.leftthree}>
-          <button className={styles.btnleft}>Sign Up</button>
+          <button className={styles.btnleft}><Link to="/signup">Sign Up</Link></button>
           <div className={styles.com}>Compare Plans</div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import './Card4.css'
+import CompletedCampaign from './CompletedCampaign'
 
-export default function Card4() {
+export default function Card4({ value }) {
 
     return (
         <div>
@@ -14,14 +15,15 @@ export default function Card4() {
                 </div>
             </div>
 
-            <div className="card4-container">
+            {value ? <CompletedCampaign /> : <div className="card4-container">
 
 
                 <div className="card4-header">This section is your feed. Your most important marketing activity will show up here.</div>
                 <div className="card4-body">Once your campaign is underway, things will look a lot more exciting.</div>
 
                 <button className="card4-button"><span className="card4-span">Create A Campaign</span></button>
-            </div>
+            </div>}
+
         </div>
     )
 }

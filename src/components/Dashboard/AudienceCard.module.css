@@ -1,0 +1,93 @@
+.Wrapper {
+  width: 34rem;
+  padding-left: 3rem;
+  padding-top: 6.9rem;
+  box-sizing: border-box;
+}
+
+.Top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Body {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 2.2rem;
+}
+
+.totalAudience {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+
+  letter-spacing: -0.03em;
+}
+
+.addContacts {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  /* Primary green */
+  color: #007c89;
+}
+
+.BigNum {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 46px;
+  margin-top: 2.2rem;
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.Breakdown {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height */
+  margin-top: 4.8rem;
+
+  letter-spacing: -0.02em;
+
+  /* Black - 900 */
+
+  color: #241c15;
+}
+
+.Campaign {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  margin-top: 2.9rem;
+
+  /* Black - 900 */
+  color: #241c15;
+}
+
+.Numbers {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+  margin-top: 1.5rem;
+
+  color: #241c15;
+}
+
+.Span {
+  color: #007c89;
+}

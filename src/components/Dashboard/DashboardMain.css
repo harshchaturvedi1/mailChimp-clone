@@ -21,46 +21,77 @@
   line-height: 18px;
 }
 
+.dashboard-card3-1-3-2-container {
+  margin-top: 36rem;
+  margin-left: 26.4rem;
+
+  /* border: 1px solid #dcdcdc; */
+  box-sizing: border-box;
+  display: flex;
+}
+
 .card3-2 {
-  position: absolute;
   width: 474px;
   height: 231px;
-  left: 768px;
-  top: 532px;
 
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
+
+  margin-left: 3rem;
 }
 
 .card3-1 {
-  position: absolute;
   width: 474px;
   height: 231px;
-  left: 264px;
-  top: 532px;
 
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
 }
 
+.dashboard-card3-3-3-4-container {
+  margin-top: 2.3rem;
+  margin-left: 26.4rem;
+
+  /* border: 1px solid #dcdcdc; */
+  box-sizing: border-box;
+  display: flex;
+}
+
 .card3-3 {
-  position: absolute;
   width: 474px;
   height: 231px;
-  left: 264px;
-  top: 793px;
 
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
 }
 
 .card3-4 {
-  position: absolute;
   width: 474px;
   height: 231px;
-  left: 768px;
-  top: 793px;
 
   border: 1px solid #dcdcdc;
   box-sizing: border-box;
+  margin-left: 3rem;
+}
+
+.hide-cards {
+  display: none;
+}
+
+.feedEnd {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 26.4rem;
+  margin-top: 7rem;
+  width: 64.2rem;
+}
+
+.feedEndText {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 19px;
+  /* identical to box height, or 106% */
+  align-self: center;
 }

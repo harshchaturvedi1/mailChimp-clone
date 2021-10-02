@@ -1,0 +1,158 @@
+.signup{
+   background: linear-gradient(to right, #FFE01B 0 0.48vw, white 0.48vw 74.5vw , #FFE01B 74.5vw 100vw );
+   height:118vh;
+   width: 100%;
+   font-family: "Graphik";
+}
+.signup>img:nth-of-type(1){
+    position: absolute;
+    height: 3.9rem;
+    width: 5.064rem;
+    top: 2rem;
+    left: 2rem;
+}
+.image{
+    height: 72.9rem;
+    width: 42rem;
+    position:absolute;
+    top: 9rem;
+    left:100.2rem;
+}
+.signupComponent{
+    position: absolute;
+    left: 15vw;
+    top: 5.7rem;
+}
+h3{
+    font-family: 'Source Serif Pro Regular';
+    font-weight: 400;
+    font-size: 4.4rem; 
+    line-height: 5.5rem;
+    letter-spacing: -4%;
+    margin: 0px;
+}
+h3~p{
+    width: 53.4rem;
+    margin: 1rem 0px;
+}   
+p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+.form{
+    margin-top: 5.7rem;
+}
+.form>div>p{
+    font-weight: 500;
+    letter-spacing:-3%;
+    line-height: 1.2rem;
+}
+h5{
+    width:47.3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin: 0rem;
+    margin-bottom:3.2rem;
+}
+.form>div>span{
+    line-height:3rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #A73205;
+    letter-spacing:0.5%;
+}
+.form>div:nth-of-type(2)>p:nth-of-type(2){
+    width: 47.1rem;
+    line-height:2.3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top:0;
+    letter-spacing:0.5%;
+}
+.form>div>input{
+    border: 1px solid rgba(36, 28, 21, 0.3);
+    box-sizing: border-box;
+    border-radius: 2px;
+    outline-color: #007C89;
+    width: 49rem;
+    height: 4.3rem;
+    padding-left: 1.6rem;
+    font-size: 1.6rem;
+}
+.form>p{
+    color: #241C15;
+    margin: 0rem;
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.9rem;
+    /* letter-spacing:-3%; */
+    font-weight: 400;
+    width:29.6rem;
+    margin-right: 4.3rem;
+    float: right;
+}
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+ul {
+    margin-top: 2.5rem;
+    margin-bottom: 3.4rem;
+    display:grid;
+    grid-template-columns: 40% 40%;
+    list-style: none;
+    text-align: left;
+
+}
+li::before {
+    content: "\2022"; 
+    color: #007C89; 
+    font-weight: 900; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1.5em;
+    font-size: 2rem;
+}
+li{
+    color: #241c15;
+    font-size: 1.4rem;
+    line-height:2.3rem;
+    font-weight: 400;
+}
+.invalid{
+    color: grey;
+}
+.invalid::before{
+    color: grey;
+}
+.valid{
+    color:black;
+}
+.valid::before{
+    color:#007C89;
+}
+.signupComponent>p:nth-of-type(2){
+    margin-top:5rem;
+    margin-bottom: 7rem;
+    color: #241c15;
+}
+.signupComponent>p:nth-of-type(2)>span{
+    text-decoration: underline;
+}
+p>span{
+    color: #007C89;
+    cursor: pointer;
+}
+.signupComponent>p:nth-of-type(3){
+    position: relative;
+    margin: 0rem;
+    font-size: 1.2rem;
+    color:#241C15;
+    left:-17.2rem;
+}
+a{
+    text-decoration: none;
+    color:grey
+}
