@@ -101,8 +101,8 @@ export default function Campaigns(){
                                                         </div>
                                                 </div></>:<></>}
                                                 </div>
-                                                {togt?<><p style={{marginTop:"-1.5rem"}}><span className={styles.to} >All subscribed contacts</span><span className={styles.aud}> in the audience</span><span className={styles.to}> Designing. </span><span className={styles.rec2}>1 recipient</span></p>
-                                                <p style={{marginTop:"-0.5rem"}} className={styles.ify}>If you’d like to segment your audience, you can <span style={{color:"#007C89"}}>edit your recipients.</span></p></>:<></>}
+                                                {togt?<><p style={{marginTop:"1.5rem"}}><span className={styles.to} >All subscribed contacts</span><span className={styles.aud}> in the audience</span><span className={styles.to}> Designing. </span><span className={styles.rec2}>1 recipient</span></p>
+                                                <p style={{marginTop:"0.5rem",marginBottom:"1rem"}} className={styles.ify}>If you’d like to segment your audience, you can <span style={{color:"#007C89"}}>edit your recipients.</span></p></>:<></>}
                                             </div>
                                            { !to?<div style={{marginLeft:"2.5rem"}}><button className={styles.llfbtn} style={{background:!togt?" #716B67":"#F4F4F4",color:!togt?"#ffff":" #57514A"}} onClick={()=>setTo(true)}>{!togt?"Add Recipients":"Edit Recipients"}</button></div>:<></>}
                                     </div>
@@ -110,13 +110,13 @@ export default function Campaigns(){
                                           <div style={{width:"2.4rem",height:"2.4rem",marginTop:"2.4rem",marginLeft:"2rem"}}><img src={fromgt?"/greentick.png":"/whitetick.png"}/></div>
                                          <div style={{display:"flex",flexDirection:"column",marginLeft:"1rem"}}>  
                                               <p className={styles.from}>From</p>
-                                              {fromgt?<div style={{marginRight:"-0.7rem"}}><p className={styles.finaltext}>{text}-{text2}</p></div>:<p className={styles.who}>Who is sending this campaign?</p>}
+                                              {fromgt?<div style={{marginRight:"-0.7rem",marginTop:"1rem",marginBottom:"1.5rem"}}><p className={styles.finaltext}>{text}-{text2}</p></div>:<p className={styles.who}>Who is sending this campaign?</p>}
                                               {from?<><div style={{display:"flex",flexDirection:"row"}}>
                                                   <div className={styles.input_title}>Name</div><div className={styles.char}>{text.length===0?<div style={{marginLeft:"9.2rem"}}></div>:`${text.length} characters`}</div><div className={styles.input_title} style={{marginLeft:'4.8rem'}}>Email address</div>
                                               </div>
                                               <div style={{display:"flex"}}>
                                                   <div><input type="text" style={{width:"43rem",height:"3.8rem"}} onChange={(e)=>setText(e.target.value)}/></div>
-                                                  <div><input type="text" style={{width:"43rem",height:"3.8rem",marginLeft:"5rem"}} onChange={(e)=>setText2(e.target.value)}/></div>
+                                                  <div><input type="text" style={{width:"43rem",height:"3.8rem",marginLeft:"4rem"}} onChange={(e)=>setText2(e.target.value)}/></div>
                                               </div>
                                               <div className={styles.hint}>
                                                   <p>Use something subs. will instantly recognize,like your company name</p>
@@ -133,7 +133,7 @@ export default function Campaigns(){
                                                 <div style={{display:"flex",flexDirection:"column",marginLeft:"1rem"}}>
                                                     <p className={styles.from}>Subject</p>
                                                    {!subtit? <p className={styles.who}>What’s the subject line for this campaign?</p>:<></>}
-                                                    { subgt?<div style={{marginRight:"6.8rem"}}><p className={styles.finaltext}>{subtext}</p></div>:<></>}
+                                                    { subgt?<div style={{marginRight:"6.8rem",marginTop:"1.5rem",marginBottom:"1.5rem"}}><p className={styles.finaltext}>{subtext}</p></div>:<></>}
                                                     {sub?<div style={{display:"flex"}}>
                                                             <div style={{display:"flex",flexDirection:"column",marginRight:"3rem"}}>
                                                                 <div style={{display:"flex",marginTop:"1rem"}}><div className={styles.subtitle}>Subject</div><div className={styles.subchar} style={{marginLeft:"30.8rem"}}>{subtext.length} characters</div></div>
@@ -162,7 +162,7 @@ export default function Campaigns(){
                                             <p className={styles.from}>Content</p>
                                             <p className={styles.who}>Design the content for your email.</p>
                                         </div>
-                                        <div style={{marginTop:"6rem",marginLeft:"7rem"}}><img src="/pagelike.png"/></div>
+                                        <div style={{marginTop:"7rem",marginLeft:"7rem",marginBottom:"1rem"}}><img src="/pagelike.png"/></div>
                                         <div><button className={styles.subbtn} style={{marginLeft:"28rem"}}>Design Email</button></div>
                                     </div>
                         </div>
