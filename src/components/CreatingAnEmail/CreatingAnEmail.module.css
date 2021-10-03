@@ -163,8 +163,11 @@
   border-radius: 0px;
   padding: 12px, 34px, 12px, 34px;
   background: #007c89;
-  color: #fff;
 }
 .Button:hover {
   cursor: pointer;
+}
+.Button>a{
+  text-decoration: none;
+  color: white;
 }

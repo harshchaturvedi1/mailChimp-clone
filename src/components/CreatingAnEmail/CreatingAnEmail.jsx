@@ -1,6 +1,7 @@
 import styles from "./CreatingAnEmail.module.css";
 import { LeftDiv } from "../Dashboard/StyledComponent";
 import { useState } from "react";
+import {Link} from "react-router-dom"
 export const CreatingAnEmail = () => {
     const [compaignName, setCompaignName] = useState("");
 
@@ -149,7 +150,7 @@ export const CreatingAnEmail = () => {
                         }}
                     />
                 </div>
-                <button className={styles.Button}>Begin</button>
+                <button className={styles.Button}><Link to="/campaigns">Begin</Link></button>
             </div>
         </>
     );
