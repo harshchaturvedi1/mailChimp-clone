@@ -97,7 +97,7 @@ input::-ms-reveal,
 input::-ms-clear {
     display: none;
 }
-/* ul {
+.ulList {
     margin-top: 2.5rem;
     margin-bottom: 3.4rem;
     display:grid;
@@ -106,21 +106,21 @@ input::-ms-clear {
     text-align: left;
 
 }
-li::before {
+.ulList>li::before {
     content: "\2022"; 
     color: #007C89; 
     font-weight: 900; 
     display: inline-block; 
     width: 1em; 
-    margin-left: -1.5em;
+    margin-left: 0rem;
     font-size: 2rem;
 }
-li{
+.ulList>li{
     color: #241c15;
     font-size: 1.4rem;
     line-height:2.3rem;
     font-weight: 400;
-} */
+}
 .invalid{
     color: grey;
 }

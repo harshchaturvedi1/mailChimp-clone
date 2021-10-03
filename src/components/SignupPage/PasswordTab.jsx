@@ -60,7 +60,7 @@ export default function PasswordTab({password, setPassword, setButton, detail,se
                 <br />
                 {password?<span>Please follow the below conventions for writing your password</span>:<></>}
             </div>
-            <ul>
+            <ul className={styles.ulList}>
                 <li className={low?styles.valid:styles.invalid}>One lowercase character</li>
                 <li className={upper?styles.valid:styles.invalid}>One uppercase character</li>
                 <li className={num?styles.valid:styles.invalid}>One number</li>
