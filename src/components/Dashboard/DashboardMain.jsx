@@ -16,7 +16,7 @@ export const DashboardMain = () => {
     return (
         <>
             <Navbar />
-            <h1 onClick={() => setStatus(!status)} className="dashboard-header">
+            <h1 className="dashboard-header">
                 {status ? "You designed your first email. Nice work" : "Ready to get Started?"}
             </h1>
             <div className="dashboard-subheader">Here’s what we recommend you do next</div>
