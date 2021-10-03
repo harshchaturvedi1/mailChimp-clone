@@ -17,6 +17,14 @@ button {
   font-size: 18px;
   align-items: center;
 }
+.crossImg{
+  margin-left: 35vw;
+}
+@media screen and (max-width: 1440px){
+  .crossImg{
+    margin-left: 25vw;
+  }
+}
 .addyellow:hover {
   color: #ffe01b;
   cursor: pointer;
