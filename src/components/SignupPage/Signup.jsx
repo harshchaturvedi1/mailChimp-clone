@@ -41,37 +41,26 @@ export default function Signup(){
     const handleEmail= (e)=>{
         if(e.target.value.match(pattern)|| e.target.value===""){
             setEmail(false);
-            e.target.style.outlineColor = '#007C89';
+            e.target.style.outlineColor = '#007C89 !important';
         } else {
             setEmail(true);
-            e.target.style.outlineColor = '#F25F25';
+            e.target.style.outlineColor = '#F25F25 !important';
         }
         setDetail({...detail, [e.target.name]:e.target.value})
     }
 
     const handleUser = (e)=>{
-        fetch("/users")
-        .then((data)=>data.json())
-        .then((data)=>{
-            console.log(data);
-        })
-        // if(e.target.value.match()|| e.target.value===""){
-        //     setEmail(false);
-        //     e.target.style.outlineColor = '#007C89';
-        // } else {
-        //     setEmail(true);
-        //     e.target.style.outlineColor = '#F25F25';
-        // }
         setDetail({...detail, [e.target.name]:e.target.value})
     }
 
     const submitData = (e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3001/create", detail);
-    }
-
-    const handleCheck = (e)=>{
-        console.log(e.target.value);
+        try{
+            axios.post("http://localhost:3001/create", detail);
+        } catch(err){
+            console.log(err);
+        }
+        localStorage.setItem("user",JSON.stringify(detail))
     }
 
     return (
@@ -83,7 +72,7 @@ export default function Signup(){
                 <div className={styles.formS}>
                     <div>
                         <p>Email</p>
-                        <input type="email" name="email" value={detail.email} onChange={handleEmail}  required/>
+                        <input type="email" name="email" value={detail.email} onChange={handleEmail} />
                         <br />
                         {email?<span>Please enter a valid email</span>:<></>}
                     </div>
@@ -96,7 +85,7 @@ export default function Signup(){
                     </div>
                     <PasswordTab password={password} setPassword={setPassword} setButton={setButton} detail={detail} setDetail={setDetail}/>
                     <Button className={styles.signupBtn} onClick={submitData} type="submit"><Link to="/dashboard" >Sign Up</Link></Button>
-                    <CheckBox type="checkbox" onClick={handleCheck} />
+                    <CheckBox type="checkbox" />
                     <p>I don't want to receive updates from Mailchimp related to marketing best practices, product and feature updates, and promotions.</p>
                 </div>
                 <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <span>Terms of Use</span> and <span>Privacy Policy</span>.</p>

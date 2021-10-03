@@ -46,6 +46,7 @@ export default function EmailSent(){
         font-weight: 500;
         letter-spacing: -3%;
     `
+    localStorage.setItem("CanpaignSubmit","true");
 
     return (
         <Main>
@@ -53,7 +54,7 @@ export default function EmailSent(){
                 <P1>...aand it’s out there</P1>
                 <P2>Lorem Ipsum is on its way to 3 subscribers from the audience Lorem Ipsum. Take a breather you’ve earned it.</P2>
                 <P2 style={{marginTop:"2.8rem"}}>View or share your campaign link:</P2>
-                <Link style={{fontSize:"1.4rem",color:"#007C89"}}>https://malichi.mp/639f69ef1b3/proin-a-lectus-ac-turpis-facilies</Link>
+                <Link to="/dashboard" style={{fontSize:"1.4rem",color:"#007C89", cursor: "pointer"}}>https://malichi.mp/639f69ef1b3/proin-a-lectus-ac-turpis-facilies</Link>
                 <br/>
                 <Button>Track Your Stats With Our Mobile App</Button>
                 <img style={{position: 'absolute',top:"18.5rem", left:"55rem"}} src="/images/successImg.svg" alt=""/>

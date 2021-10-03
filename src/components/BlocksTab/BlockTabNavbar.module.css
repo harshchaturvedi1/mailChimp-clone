@@ -42,3 +42,7 @@
 p:hover {
   cursor: pointer;
 }
+.Button>a{
+  text-decoration: none;
+  color: inherit;
+}

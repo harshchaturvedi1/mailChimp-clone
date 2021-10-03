@@ -1,6 +1,6 @@
 .signup{
    background: linear-gradient(to right, #FFE01B 0 0.48vw, white 0.48vw 74.5vw , #FFE01B 74.5vw 100vw );
-   height:125vh;
+   height:130vh;
    width: 100%;
    font-family: "Graphik";
 }
@@ -106,7 +106,28 @@ input::-ms-clear {
     text-align: left;
 
 }
-.ulList>li::before {
+.invalid{
+    color: #BDBBB9;
+    font-size: 1.4rem;
+    line-height:2.3rem;
+    font-weight: 400;
+}
+.invalid::before{
+    color: #BDBBB9;
+    content: "\2022";
+    font-weight: 900; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: 0rem;
+    font-size: 2rem;
+}
+.valid{
+    color: #241c15;
+    font-size: 1.4rem;
+    line-height:2.3rem;
+    font-weight: 400;
+}
+.valid::before{
     content: "\2022"; 
     color: #007C89; 
     font-weight: 900; 
@@ -114,24 +135,6 @@ input::-ms-clear {
     width: 1em; 
     margin-left: 0rem;
     font-size: 2rem;
-}
-.ulList>li{
-    color: #241c15;
-    font-size: 1.4rem;
-    line-height:2.3rem;
-    font-weight: 400;
-}
-.invalid{
-    color: grey;
-}
-.invalid::before{
-    color: grey;
-}
-.valid{
-    color:black;
-}
-.valid::before{
-    color:#007C89;
 }
 .signupComponent>p:nth-of-type(2){
     margin-top:5rem;
@@ -155,5 +158,5 @@ p>span{
 }
 .signupBtn>a{
     text-decoration: none;
-    color: grey;
+    color: inherit;
 }

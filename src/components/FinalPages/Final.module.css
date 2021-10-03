@@ -1,0 +1,573 @@
+.middle{
+    width:22.3rem;
+    height:60rem;
+    border-right: 1px solid rgba(184, 184, 184, 0.6);
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    margin-left:9.7rem
+}
+.campaign{
+    font-family: Source Serif Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 1.8rem;
+line-height: 2.3rem;
+color: #241C15;
+margin-left:2.5rem;
+margin-top:2rem;
+margin-bottom:1.8rem
+}
+.allcamp{
+    background: #EEEDED;
+    height:4.6rem;
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.5rem;
+color: #353535;
+}
+.email{
+    height:4.6rem;
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.5rem;
+color: #353535;
+}
+.upgrade{
+    border-bottom:1px solid #DEDDDC;
+}
+.upgradebtn{
+    background: #007C89;
+    align-items: center;
+    width:19rem;
+    border:none;
+    height:4rem;
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+color: #FFFFFF;
+margin-left:1.7rem;
+margin-top:29rem;
+margin-bottom:1.5rem
+}
+.miduser{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+color: #241C15;
+margin-top:1rem;
+margin-bottom:1rem
+}
+.miduserdet{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 13px;
+color: #241C15;
+}
+.last{
+    width:105rem;
+    display:flex;
+    flex-direction:column;
+    margin-left:22.7rem
+}
+.lastfirst_div{
+    height:7.7rem;
+    border-bottom:1px solid rgba(184, 184, 184, 0.6);
+    display:flex;
+    position:sticky;
+    top:0;
+    background:#ffff
+}
+.keepit{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+color: #241C15;
+margin-top:2.2rem;
+margin-bottom:0.7rem;
+margin-right:1rem
+}
+.drfemail{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.5rem;
+color: #565656;
+}
+.draft{
+    width:3.6rem;
+    height:1.5rem;
+    margin-top:2.3rem;
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 15px;
+background: #EFEEEA;
+border-radius: 1.05rem;
+color: #241C15;
+margin-left:0.8rem;
+}
+.flater{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.5rem;
+letter-spacing: -0.03em;
+text-decoration: underline;
+color: #007C89;
+margin-right:"";
+margin-top:3.2rem;
+}
+.schbtn{
+    border: 1px solid #DEDDDC;
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+color: #C0BBB9;
+width:9.4rem;
+height:3.4rem;
+margin-left:2.3rem;
+margin-top:2.3rem;
+background:transparent
+}
+.sendbtn{
+    width:6.8rem;
+    height:3.4rem;
+    border: 1px solid #DEDDDC;
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+color: #C0BBB9;
+/* margin-right:-400px; */
+margin-top:2.3rem;
+background:transparent
+}
+.lastsec_div{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 3.6rem;
+line-height: 4rem;
+letter-spacing: -0.03em;
+color: #000000;
+margin-top:4rem;
+margin-bottom:0.5rem
+}
+.editname{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 15px;
+color: #007C89;
+margin-left:0.2rem
+}
+.lastlast{
+    width:100rem;
+    /* height: 78rem; */
+    border: 0.4px solid #B2B2B2;
+    border-radius: 0.2rem;
+    margin-left:2rem;
+    margin-top:5rem;
+    display:flex;
+    flex-direction:column;
+}
+.llf{
+    display:flex;
+    /* height:13rem; */
+    border-bottom: 0.8px dashed #DEDDDC;
+}
+.to{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+letter-spacing: -0.03em;
+color: #3D3630;
+margin-top:1.5rem
+}
+.aud{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 300;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.03em;
+color: #241C15;
+}
+.rec2{
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: -0.03em;
+    color:#007C89;
+    text-decoration:underline;
+}
+.ify{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 1.8rem;
+color: #241C15;
+
+}
+.llfbtn{
+    background: #F4F4F4;
+    border:none;
+    /* width:11rem; */
+border-radius: 2px;
+font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+height:3.5rem;
+letter-spacing: -0.03em;
+color: #57514A;
+margin-top:2.5rem;
+margin-left:27.7rem;
+padding:1rem 1.6rem;
+}
+.lls{
+    display:flex;
+    /* height:10rem; */
+    border-bottom: 0.8px dashed #DEDDDC;
+}
+.addfrom{
+    background: #716B67;
+border-radius: 2px;
+font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+border:none;
+/* width:11rem; */
+height:3.5rem;
+padding:1rem 1.6rem
+}
+.from{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 2.0rem;
+letter-spacing: -0.03em;
+color: #000000;
+margin-top:2rem
+}
+.who{
+    font-family: Graphik;
+font-style: italic;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.02em;
+color: #878787;
+margin-top:1.2rem;
+margin-bottom:1rem
+}
+.input_title{
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    letter-spacing: -0.03em;    
+    color: #403B3B;
+}
+.char{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.03em;
+color: #BDBAB8;
+margin-left:30rem;
+}
+.hint{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 1.5rem;
+letter-spacing: -0.055em;
+color: #706B67;
+}
+input{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+letter-spacing: -0.03em;
+color: #241C15;
+outline:none;
+padding-left:1.6rem;
+}
+input:focus{
+    border: 1px solid #007C89;
+box-sizing: border-box;
+border-radius: 0.2rem;
+padding-left:1.6rem;
+}
+.savebtn{
+    width: 7.6rem;
+height: 4.0rem;
+background: #716B67;
+border-radius: 2px;
+border:none;
+margin-top:2rem;
+font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.025em;
+color:#ffff;
+margin-top:1rem;
+margin-bottom:1.8rem
+}
+.cancel{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.025em;
+text-decoration: underline;
+color: #007C89;
+margin-top:2rem;
+margin-left:2rem;
+cursor:pointer;
+}
+.llt{
+    /* height:9rem;     */
+    display:flex;
+    border-bottom: 0.8px dashed #DEDDDC;
+}
+.subbtn{
+    background: #716B67;
+border-radius: 0.2rem;
+/* width:11rem; */
+height:3.5rem;
+font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+letter-spacing: -0.03em;
+color: #FFFFFF;
+border:none;
+margin-top:2.5rem;
+margin-left:52.4rem ;
+padding:1rem 1.6rem;
+}
+.llfo{
+    display:flex;
+}
+.finaltext{
+    font-family: Graphik;
+    width:40rem;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-right:-17rem;
+margin-top:-1rem
+}
+.syc{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 2.8rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #241C15;
+margin-bottom:3rem;
+}
+.camplink{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-bottom:1rem;
+}
+.finallink{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-right:1.5rem;
+margin-bottom:0.8rem;
+}
+.linkedit{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+text-decoration-line: underline;
+color: #007C89;
+}
+.want{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-bottom:5rem;
+}
+.addsocial{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 2.8rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #241C15;
+margin-bottom:3.6rem;
+}
+.socialname{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 2.0rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-bottom:0.4rem
+}
+.connect{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 1.9rem;
+letter-spacing: -0.03em;
+color: #007C89;
+
+}
+.instadetail{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.6rem;
+line-height: 2.2rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+margin-bottom:3.6rem;
+}
+.setra{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 2.2rem;
+letter-spacing: -0.03em;
+color: #241C15;
+margin-right:1rem
+}
+.lastlist{
+    font-family: Graphik;
+font-style: normal;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 2.2rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+}
+.subtitle{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.03em;
+color: #403B3B;
+}
+.subchar{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.03em;
+color: #BDBAB8;
+}
+.subinp{
+    border: 1px solid #BDBAB8;
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    width:45.4rem;
+    height:4rem;
+}
+.firsthint{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.5rem;
+letter-spacing: -0.025em;
+color: #706B67;
+margin-top:0.8rem;
+margin-bottom:3.6rem ;
+}
+.subblue{
+    color: #007C89;
+}
+.subsavebtn{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 1.8rem;
+letter-spacing: -0.025em;
+}
+.subcancelbtn{
+    font-family: Graphik;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: -0.025em;
+text-decoration-line: underline;
+color: #007C89;
+margin-left:3.8rem;
+}

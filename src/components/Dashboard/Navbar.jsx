@@ -1,6 +1,9 @@
 import { MainDiv, LeftDiv, RightDiv, NameInitial } from "./StyledComponent";
 
 export const Navbar = () => {
+
+  const user_name = JSON.parse(localStorage.getItem("user"))
+
   return (
     <>
       <MainDiv>
@@ -170,7 +173,7 @@ export const Navbar = () => {
             </svg>
           </div>
 
-          <NameInitial><p>H</p>
+          <NameInitial><p>{user_name.username[0]}</p>
           </NameInitial>
         </RightDiv>
       </MainDiv>

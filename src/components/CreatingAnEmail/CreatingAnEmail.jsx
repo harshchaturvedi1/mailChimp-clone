@@ -5,6 +5,10 @@ import {Link} from "react-router-dom"
 export const CreatingAnEmail = () => {
     const [compaignName, setCompaignName] = useState("");
 
+    const handleClick = ()=>{
+        localStorage.setItem("Compaign Name", JSON.stringify(compaignName))
+    }
+
     return (
         <>
             <LeftDiv></LeftDiv>
@@ -150,7 +154,7 @@ export const CreatingAnEmail = () => {
                         }}
                     />
                 </div>
-                <button className={styles.Button}><Link to="/campaigns">Begin</Link></button>
+                <button className={styles.Button} onClick={handleClick}><Link to="/campaigns">Begin</Link></button>
             </div>
         </>
     );

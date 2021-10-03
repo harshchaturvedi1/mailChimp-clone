@@ -1,12 +1,12 @@
-import {Navbar} from "./Dashboard/Navbar"
-import styles from "./Campaigns.module.css"
+import {Navbar} from "../Dashboard/Navbar"
+import styles from "./Final.module.css"
 import {useState} from "react"
-import CampaignsSelectTab from "./CampaignsSelectTab"
-export default function Campaigns(){
+import SendEmail from "./SendEmail"
+import EmailSend from "./EmailSent"
+export default function Final(){
     const[save1,setSave1]=useState(false)
     const[save2,setSave2]=useState(false)
     const[save3,setSave3]=useState(false)
-    const[save4,setSave4]=useState(false)
     const [status,setStatus] = useState(true)
     const [totext1,setTotext1]=useState("")
     const [totext2,setTotext2]=useState("")
@@ -23,7 +23,6 @@ export default function Campaigns(){
     const [togt,setTogt]=useState(false)
     const [to,setTo]=useState(false)
     const [totit,setTotit]=useState(false)
-    const [final, setFinal] = useState(true)
 
     const user_name = JSON.parse(localStorage.getItem("user"));
     const campaign = JSON.parse(localStorage.getItem("Compaign Name"));
@@ -173,49 +172,8 @@ export default function Campaigns(){
                                         <div><button onClick={()=>setStatus(false)}  className={styles.subbtn} style={{marginLeft:"28rem"}}>Design Email</button></div>
                                     </div>
                         </div>
-            </div>:<CampaignsSelectTab />}
-        </div>
-        <div style={{marginLeft:"33.5rem",marginTop:"10rem"}}>
-                    <div className={styles.syc}>Share Your Campaign</div>
-                    <div className={styles.camplink}>Campaign Link</div>
-                    <div className={styles.finallink}>https://mailchi.mp/[xxxxxx]/[xxxxxx] <span class={styles.linkedit}>Edit</span></div>
-                    <div className={styles.want}>Want to brand your campaign link? Click edit to create a custom URL.</div>
-                    <div className={styles.addsocial}>Add A Social Post To Your Campaign</div>
-                    <div style={{display:"flex"}}>
-                        <div style={{width:"3.7rem",marginRight:"1.2rem",marginBottom:"4.7rem"}}><img style={{width:"100%"}}  src="https://cdn-icons-png.flaticon.com/512/124/124010.png"/></div>
-                        <div style={{width:"13.7rem",display:"flex",flexDirection:"column"}}>
-                            <div className={styles.socialname}>Facebook</div>
-                            <div className={styles.connect}>Connect Facebook</div>
-                        </div>
-                    </div>
-                    <div  style={{display:"flex"}}> 
-                               <div  style={{width:"3.7rem",marginRight:"1.2rem",marginBottom:"4.7rem"}}><img  style={{width:"100%"}} src="/twitter.png"/></div>
-                               <div style={{width:"13.7rem",display:"flex",flexDirection:"column"}}>
-                                   <div className={styles.socialname}>Twitter</div>
-                                   <div className={styles.connect}>Connect Twitter</div>
-                             </div>
-                    </div>
-                    <div  style={{display:"flex"}}>
-                         <div style={{width:"3.7rem",marginRight:"1.2rem",marginBottom:"4.7rem"}}><img src="/insta.png" /></div>
-                         <div style={{width:"50.7rem",display:"flex",flexDirection:"column"}}>
-                             <div  className={styles.socialname}>Instagram</div>
-                             <div className={styles.instadetail}>Add an Instagram post to your campaign by connecting your <span style={{color:"#007C89"}}>Instagram business profile </span>to your Facebook page.<br/><span style={{color:"#007C89"}}>Connect Facebook</span></div>
-                         </div>
-                    </div>
-                    <div style={{width:"100rem",height:"23.6rem",background:"#F2F2F2"}}>
-                         <div style={{display:"flex",flexDirection:"column",marginLeft:"2.6rem"}}>
-                                <div style={{display:"flex",marginTop:"3.4rem",marginBottom:"1.4rem"}}>
-                                    <div className={styles.setra}>Settings & Tracking</div>
-                                    <div class={styles.linkedit} style={{marginTop:"0.3rem"}}>Edit</div>
-                                </div>
-                                <div className={styles.lastlist}><li>You're <span style={{fontWeight:"500"}}>not using Inbox</span> to manage replies</li></div>
-                                <div className={styles.lastlist}><li> Your <span style={{fontWeight:"500"}}>embedded videos will not auto-convert </span>into linked thumbnail images.</li></div>
-                                <div className={styles.lastlist}><li> You're <span style={{fontWeight:"500"}}>tracking opens.</span></li></div>
-                                <div className={styles.lastlist}><li> You're <span style={{fontWeight:"500"}}>tracking clicks.</span></li></div>
-                                <div className={styles.lastlist}><li> You're <span style={{fontWeight:"500"}}>not tracking plain-text clicks.</span></li></div>
-                                <div className={styles.lastlist}><li> You're <span style={{fontWeight:"500"}}>not tracking e-commerce link activity.</span></li></div>
-                         </div>
-                    </div>
+            </div>:<></>}
+            {status?<SendEmail setStatus={setStatus} />:<EmailSend />}
         </div>
     </div>
 }

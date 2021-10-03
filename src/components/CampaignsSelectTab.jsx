@@ -25,6 +25,16 @@ export default function CampaignsSelectTab(){
         width:82rem;
         background-color:#F6F6F4;
     `
+
+    const Button = styled.button`
+    >a{
+        text-decoration:none;
+        color: inherit;
+    }
+    
+    `
+
+
     return (
         <Main>
             <PopUp >
@@ -42,17 +52,17 @@ export default function CampaignsSelectTab(){
                             <li>Create custom templates and showcase your e-commerce products</li>
                             <li>Place blocks(images and text) side by side</li>
                         </ul>
-                        <button >Select</button>
+                        <Button><Link to="/dashboard/template">Select</Link></Button>
                     </div>
                     <div>
-                        <h2>Classic Builder</h2>
+                        <h2>New Builder</h2>
                         <img src="/images/template.svg" alt="" />
                         <ul>
                             <li>Our traditional builder you may know and love</li>
                             <li>Create custom templates and showcase your e-commerce products</li>
                             <li>Place blocks(images and text) side by side</li>
                         </ul>
-                        <button><Link to="/dashboard/template">Select</Link></button>
+                        <Button><Link to="/dashboard/template">Select</Link></Button>
                     </div>
                 </div>
             </PopUp>

@@ -10,7 +10,8 @@ import './DashboardMain.css'
 
 export const DashboardMain = () => {
 
-    const [status, setStatus] = useState(false);
+    const campaign = JSON.parse(localStorage.getItem("CanpaignSubmit"));
+    const [status, setStatus] = useState(campaign);
 
     return (
         <>

@@ -20,11 +20,6 @@ button {
 .crossImg{
   margin-left: 35vw;
 }
-@media screen and (max-width: 1440px){
-  .crossImg{
-    margin-left: 25vw;
-  }
-}
 .addyellow:hover {
   color: #ffe01b;
   cursor: pointer;
@@ -402,5 +397,24 @@ button {
 .btnleft > a,
 .navSingup > a {
   text-decoration: none;
-  color: white;
+  color: inherit;
+}
+.logoTag{
+  margin-left: 40rem;
+}
+.customiseBtn{
+  margin-top: 2rem;
+  margin-left: 33rem 
+}
+@media screen and (max-width: 1440px){
+  .crossImg{
+    margin-left: 28vw;
+  }
+  .logoTag{
+    margin-left: 27rem;
+  }
+  .customiseBtn{
+    margin-top: 2rem;
+    margin-left: 22rem;
+  }
 }

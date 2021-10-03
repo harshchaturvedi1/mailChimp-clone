@@ -43,7 +43,7 @@ export const NameInitial = styled.div`
 z-index:100;
 position:absolute;
 font-family:Source Serif Pro;
-font-size:2rem;
+font-size:5rem;
 bottom:1.3rem;
 font-weight:400;
 > p{

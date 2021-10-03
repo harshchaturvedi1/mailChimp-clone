@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import {Link} from "react-router-dom"
 
-export default function SendEmail(){
+export default function SendEmail({setStatus}){
 
     const Main = styled.div`
         background:transparent;
@@ -73,8 +73,8 @@ export default function SendEmail(){
                     <P1>3 subscribers</P1>
                 </MainDiv>
                 <Foot>
-                    <Button >Send Now</Button>
-                    <Link to="" style={{color: '#007C89', fontSize:'1.6rem',fontWeight:'500', lineHeight:'20rem'}} >Cancel</Link>
+                    <Button onClick={()=>setStatus(false)} >Send Now</Button>
+                    <Link to="/" style={{color: '#007C89', fontSize:'1.6rem',fontWeight:'500', lineHeight:'20rem'}} >Cancel</Link>
                 </Foot>
             </PopUp>
         </Main>

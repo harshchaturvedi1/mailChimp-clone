@@ -14,6 +14,7 @@ export default function Homepage() {
       return setColor("transparent");
     }
   };
+  localStorage.setItem("CanpaignSubmit","false");
   useEffect(() => {
     window.addEventListener("scroll", scrollevent);
     return () => window.removeEventListener("scroll", scrollevent);
@@ -100,7 +101,7 @@ export default function Homepage() {
           <div style={{ marginLeft: "-1rem" }}>
             <img src="/logo2.png" />
           </div>
-          <div style={{ marginLeft: "27rem" }}>
+          <div className={styles.logoTag}>
             <img src="/logo3.png" />
           </div>
           <div
@@ -176,7 +177,7 @@ export default function Homepage() {
               certain aggregate and anonymized data from your browser
               independent of your cookie preferences. Cookie Statement
             </div>
-            <div style={{ marginTop: "1.5rem", marginLeft: "20rem" }}>
+            <div className={styles.customiseBtn}>
               <button
                 style={{
                   height: "3.3rem",

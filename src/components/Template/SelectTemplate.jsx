@@ -79,7 +79,7 @@ export default function SelectTemplate(){
 
     return(
         <>
-            <h1>Select a template</h1>
+            <h1 className={styles.mainH1}>Select a template</h1>
             <div className={styles.bar}>
                 <span>Layouts</span>
                 <span>Themes</span>

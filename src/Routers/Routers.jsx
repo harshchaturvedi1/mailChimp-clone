@@ -6,6 +6,8 @@ import Homepage from "../components/Homepage"
 import Campaigns from "../components/Campaigns"
 import SignupPage from "../components/SignupPage/Signup"
 import Template from "../components/Template/Template"
+import FinalPage from "../components/FinalPages/Final"
+
 export default function Routers() {
     return <div>
         <Switch>
@@ -30,6 +32,9 @@ export default function Routers() {
             </Route>
             <Route exact path="/blocktab">
                 <BlocksTab />
+            </Route>
+            <Route exact path="/finalSubmit">
+                <FinalPage />
             </Route>
             <Route>Error 404</Route>
         </Switch>

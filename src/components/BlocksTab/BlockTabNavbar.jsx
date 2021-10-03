@@ -39,7 +39,7 @@ export const Navbar = () => {
                         />
                     </svg>
                 </p>
-                <p className={styles.Button}><Link to="/campaigns">Continue</Link></p>
+                <p className={styles.Button}><Link to="/finalSubmit">Continue</Link></p>
             </div>
         </div>
     );
