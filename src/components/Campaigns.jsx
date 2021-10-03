@@ -2,6 +2,13 @@ import {Navbar} from "./Dashboard/Navbar"
 import styles from "./Campaigns.module.css"
 import {useState} from "react"
 export default function Campaigns(){
+    const[save1,setSave1]=useState(false)
+    const[save2,setSave2]=useState(false)
+    const[save3,setSave3]=useState(false)
+    const[save4,setSave4]=useState(false)
+    const [totext1,setTotext1]=useState("")
+    const [totext2,setTotext2]=useState("")
+    const [totext3,setTotext3]=useState("")
     const [text,setText]=useState("")
     const [text2,setText2]=useState("")
     const [subtext,setSubtext]=useState("")
@@ -13,14 +20,24 @@ export default function Campaigns(){
     const[subtit,setSubtit]=useState(false)
     const [togt,setTogt]=useState(false)
     const [to,setTo]=useState(false)
+    const [totit,setTotit]=useState(false)
     const togglefgt=()=>{
         setFromgt(true)
         setFrom(false)
     }
     const togglesubgt=()=>{
+        setSave3(true)
+        setSave2(false)
         setSubgt(true);
         setSub(false)
         setSubtit(true)
+    }
+    const toggletogt=()=>{
+        setSave1(true)
+        setSave2(true)
+        setTogt(true);
+        setTotit(true)
+        setTo(false);
     }
     return <div>
         <div style={{display:"flex"}}>
@@ -37,12 +54,24 @@ export default function Campaigns(){
             </div>
             <div className={styles.last}>
                         <div className={styles.lastfirst_div}>
-                            <div style={{marginLeft:"2.9rem",marginTop:"2.8rem"}}><img src="/keepitup.png"/></div>
-                            <div style={{display:"flex",flexDirection:"column",marginLeft:"1.6rem"}}><p className={styles.keepit}>Keep It Up!</p><p className={styles.drfemail}>Draft Email</p></div>
+                           {!save1?<> <div style={{marginLeft:"2.9rem",marginTop:"2.8rem"}}><img src="/mail.png"/></div>
+                            <div style={{display:"flex",flexDirection:"column",marginLeft:"1.6rem"}}><p className={styles.keepit}>Let's get started!</p><p className={styles.drfemail}>Draft Email</p></div>
                             <div className={styles.draft}>Draft</div>
-                            <div className={styles.flater}>Finish Later</div>
-                            <div><button className={styles.schbtn}>Schedule</button></div>
-                            <div><button className={styles.sendbtn}>Send</button></div>
+                            <div className={styles.flater} style={{marginLeft:"50rem"}}>Finish Later</div>
+                            <div><button className={styles.schbtn} style={{marginLeft:"2rem"}}>Schedule</button></div>
+                            <div style={{marginLeft:"2rem"}}><button className={styles.sendbtn}>Send</button></div></>:<></>}
+                            {save2?<> <div style={{marginLeft:"2.9rem",marginTop:"2.8rem"}}><img src="/mail.png"/></div>
+                            <div style={{display:"flex",flexDirection:"column",marginLeft:"1.6rem"}}><p className={styles.keepit}>Keep it up!</p><p className={styles.drfemail}>Draft Email</p></div>
+                            <div className={styles.draft}>Draft</div>
+                            <div className={styles.flater} style={{marginLeft:"54rem"}}>Finish Later</div>
+                            <div><button className={styles.schbtn} style={{marginLeft:"2rem"}}>Schedule</button></div>
+                            <div style={{marginLeft:"2rem"}}><button className={styles.sendbtn}>Send</button></div></>:<></>}
+                            {save3?<> <div style={{marginLeft:"2.9rem",marginTop:"2.8rem"}}><img src="/mail.png"/></div>
+                            <div style={{display:"flex",flexDirection:"column",marginLeft:"1.6rem"}}><p className={styles.keepit}>You're almost finished!</p><p className={styles.drfemail}>Draft Email</p></div>
+                            <div className={styles.draft}>Draft</div>
+                            <div className={styles.flater} style={{marginLeft:"45rem"}}>Finish Later</div>
+                            <div><button className={styles.schbtn} style={{marginLeft:"2rem"}}>Schedule</button></div>
+                            <div style={{marginLeft:"2rem"}}><button className={styles.sendbtn}>Send</button></div></>:<></>}
                         </div>
                         <div style={{marginLeft:"3rem"}}>
                                     <p className={styles.lastsec_div}>User Name</p>
@@ -53,11 +82,29 @@ export default function Campaigns(){
                                            <div style={{width:"2.4rem",height:"2.4rem",marginTop:"2.4rem",marginLeft:"2rem"}}><img src={togt?"/greentick.png":"/whitetick.png"}/></div>
                                             <div style={{marginLeft:"1rem",marginTop:"0.4rem"}}>
                                                 <p className={styles.to}>To</p>
-                                                
-                                                {to?<><p style={{marginTop:"-1.5rem"}}><span className={styles.to} >All subscribed contacts</span><span className={styles.aud}> in the audience</span><span className={styles.to}> Designing. </span><span className={styles.rec2}>2 recipients</span></p>
-                                                <p style={{marginTop:"-0.5rem"}} className={styles.ify}>If you’d like to segment your audience, you can <span style={{color:"#007C89"}}>edit your recipients.</span></p></>:<div style={{marginRight:"22rem"}}><p className={styles.who} >Who are you sending this campaign to?</p></div>}
+                                                <div style={{marginRight:"22rem",display:"flex",flexDirection:"column"}}>
+                                                {!totit?<p className={styles.who} >Who are you sending this campaign to?</p>:<></>}
+                                                {to?<><div  style={{marginRight:"22rem",display:"flex",flexDirection:"column"}} >
+                                                        <div style={{display:"flex",flexDirection:"row",marginTop:"1rem"}}><div className={styles.subtitle}>Email</div><div className={styles.subchar} style={{marginLeft:"32.4rem"}}>{totext1.length} characters</div></div>
+                                                        <div><input type="text"  className={styles.subinp} onChange={(e)=>setTotext1(e.target.value)}/></div>
+                                                        <div style={{display:"flex",flexDirection:"row",marginTop:"1rem"}}><div className={styles.subtitle}>Name</div><div className={styles.subchar} style={{marginLeft:"31.9rem"}}>{totext2.length} characters</div></div>
+                                                        <div><input type="text"  className={styles.subinp} onChange={(e)=>setTotext2(e.target.value)}/></div>
+                                                        <div style={{display:"flex",flexDirection:"row",marginTop:"1rem"}}><div className={styles.subtitle}>Address</div><div className={styles.subchar} style={{marginLeft:"30.4rem"}}>{totext3.length} characters</div></div>
+                                                        <div><input type="text"  className={styles.subinp} onChange={(e)=>setTotext3(e.target.value)}/></div>
+                                                        <div style={{display:"flex",flexDirection:"row",marginTop:"1rem"}}>
+                                                        <div style={{marginBottom:"1.5rem",marginTop:"1rem"}}>
+                                                            <button  style={{width:"7.6rem",height:"4rem",border:"1px solid #D9D9D9",borderRadius:"0.2rem",background:!(totext1.length>0&&totext2.length>0&&totext3.length>0)?"transparent":"#716B67",color:!(totext1.length>0&&totext2.length>0&&totext3.length>0)?"#D9D9D9":"#FFFFFF"}} className={styles.subsavebtn} onClick={()=>toggletogt()}>Save</button>
+                                                       </div>
+                                                       <div style={{marginTop:"2.1rem"}} className={styles.subcancelbtn} onClick={()=>setTo(false)}>  
+                                                       Cancel                                                          
+                                                        </div>
+                                                        </div>
+                                                </div></>:<></>}
+                                                </div>
+                                                {togt?<><p style={{marginTop:"-1.5rem"}}><span className={styles.to} >All subscribed contacts</span><span className={styles.aud}> in the audience</span><span className={styles.to}> Designing. </span><span className={styles.rec2}>1 recipient</span></p>
+                                                <p style={{marginTop:"-0.5rem"}} className={styles.ify}>If you’d like to segment your audience, you can <span style={{color:"#007C89"}}>edit your recipients.</span></p></>:<></>}
                                             </div>
-                                            <div><button className={styles.llfbtn} style={{background:!to?" #716B67":"#F4F4F4",color:!to?"#ffff":" #57514A"}}>{!to?"Add Recipients":"Edit Recipients"}</button></div>
+                                           { !to?<div style={{marginLeft:"2.5rem"}}><button className={styles.llfbtn} style={{background:!togt?" #716B67":"#F4F4F4",color:!togt?"#ffff":" #57514A"}} onClick={()=>setTo(true)}>{!togt?"Add Recipients":"Edit Recipients"}</button></div>:<></>}
                                     </div>
                                     <div className={styles.lls}>
                                           <div style={{width:"2.4rem",height:"2.4rem",marginTop:"2.4rem",marginLeft:"2rem"}}><img src={fromgt?"/greentick.png":"/whitetick.png"}/></div>
@@ -72,28 +119,14 @@ export default function Campaigns(){
                                                   <div><input type="text" style={{width:"43rem",height:"3.8rem",marginLeft:"5rem"}} onChange={(e)=>setText2(e.target.value)}/></div>
                                               </div>
                                               <div className={styles.hint}>
-                                                  <p>Use something subscribers will instantly recognize,like your company name</p>
+                                                  <p>Use something subs. will instantly recognize,like your company name</p>
                                               </div>
                                               <div style={{display:"flex"}}>
-                                                  <button className={styles.savebtn} onClick={()=>togglefgt()}>Save</button>
+                                                  <button className={styles.savebtn} style={{background:!(text.length>0&&text2.length>>0)?"transparent":"#716B67",color:!(totext1.length>0&&totext2.length>0&&totext3.length>0)?"#D9D9D9":"#FFFFFF"}}onClick={()=>togglefgt()}>Save</button>
                                                   <div className={styles.cancel} onClick={()=>setFrom(false)}>Cancel</div>
                                               </div> </>:<></>}
-                                              {/* <div style={{display:"flex",flexDirection:"row"}}>
-                                                  <div className={styles.input_title}>Name</div><div className={styles.char}>{text.length===0?<div style={{marginLeft:"9.2rem"}}></div>:`${text.length} characters`}</div><div className={styles.input_title} style={{marginLeft:'4.8rem'}}>Email address</div>
-                                              </div>
-                                              <div style={{display:"flex"}}>
-                                                  <div><input type="text" style={{width:"43rem",height:"4rem"}} onChange={(e)=>setText(e.target.value)}/></div>
-                                                  <div><input type="text" style={{width:"43rem",height:"4rem",marginLeft:"5rem"}}/></div>
-                                              </div>
-                                              <div className={styles.hint}>
-                                                  <p>Use something subscribers will instantly recognize,like your company name</p>
-                                              </div>
-                                              <div style={{display:"flex"}}>
-                                                  <button className={styles.savebtn}>Save</button>
-                                                  <div className={styles.cancel}>Cancel</div>
-                                              </div> */}
                                            </div>
-                                           {!from?<div style={{marginLeft:"57.5rem",marginTop:"3rem"}}><button className={styles.addfrom} onClick={()=>setFrom(true)}>{!fromgt?"Add From":"Edit From"}</button></div>:<></>}
+                                           {!from?<div style={{marginLeft:"61.4rem",marginTop:"2.3rem"}}><button className={styles.addfrom} onClick={()=>setFrom(true)} style={{color:fromgt?"#241C15":"",background:fromgt?"#f4f4f4":"",marginLeft:fromgt?"0.5rem":""}}>{!fromgt?"Add From":"Edit From"}</button></div>:<></>}
                                     </div>
                                     <div className={styles.llt}>
                                                 <div style={{width:"2.4rem",height:"2.4rem",marginTop:"2.4rem",marginLeft:"2rem"}}><img src={subgt?"/greentick.png":"/whitetick.png"}/></div>
@@ -120,7 +153,7 @@ export default function Campaigns(){
                                                     </div>:<div></div>}
                                                 </div>
                                                 <div>
-                                                  { !sub? <button className={styles.subbtn} onClick={()=>setSub(true)}>{subgt?"Edit":"Add Subject"}</button>:<></>}
+                                                  { !sub? <button className={styles.subbtn} style={{marginLeft:subgt?"52.8rem":"52.4rem",color:subgt?"#241c15":"",background:subgt?"#f4f4f4":""}} onClick={()=>setSub(true)}>{subgt?"Edit Subject":"Add Subject"}</button>:<></>}
                                                 </div>
                                     </div>
                                     <div className={styles.llfo}>
@@ -130,7 +163,7 @@ export default function Campaigns(){
                                             <p className={styles.who}>Design the content for your email.</p>
                                         </div>
                                         <div style={{marginTop:"6rem",marginLeft:"7rem"}}><img src="/pagelike.png"/></div>
-                                        <div><button className={styles.subbtn} style={{marginLeft:"26rem"}}>Design Email</button></div>
+                                        <div><button className={styles.subbtn} style={{marginLeft:"28rem"}}>Design Email</button></div>
                                     </div>
                         </div>
             </div>
