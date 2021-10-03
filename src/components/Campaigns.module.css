@@ -53,7 +53,7 @@ font-size: 1.6rem;
 line-height: 1.8rem;
 color: #FFFFFF;
 margin-left:1.7rem;
-margin-top:25rem;
+margin-top:29rem;
 margin-bottom:1.5rem
 }
 .miduser{
@@ -63,7 +63,8 @@ font-weight: 500;
 font-size: 1.6rem;
 line-height: 1.8rem;
 color: #241C15;
-margin-bottom:-0.5rem
+margin-top:1rem;
+margin-bottom:1rem
 }
 .miduserdet{
     font-family: Graphik;
@@ -95,7 +96,8 @@ font-size: 1.6rem;
 line-height: 1.8rem;
 color: #241C15;
 margin-top:2.2rem;
-margin-bottom:-0.7rem;margin-right:1rem
+margin-bottom:0.7rem;
+margin-right:1rem
 }
 .drfemail{
     font-family: Graphik;
@@ -167,7 +169,8 @@ font-size: 3.6rem;
 line-height: 4rem;
 letter-spacing: -0.03em;
 color: #000000;
-margin-bottom:-0.5rem
+margin-top:4rem;
+margin-bottom:0.5rem
 }
 .editname{
     font-family: Graphik;
@@ -201,7 +204,7 @@ font-size: 18px;
 line-height: 20px;
 letter-spacing: -0.03em;
 color: #3D3630;
-
+margin-top:1.5rem
 }
 .aud{
     font-family: Graphik;
@@ -286,7 +289,8 @@ font-size: 1.6rem;
 line-height: 1.8rem;
 letter-spacing: -0.02em;
 color: #878787;
-margin-top:-1.2rem
+margin-top:1.2rem;
+margin-bottom:1rem
 }
 .input_title{
     font-family: Graphik;
@@ -324,11 +328,13 @@ font-size: 1.4rem;
 letter-spacing: -0.03em;
 color: #241C15;
 outline:none;
+padding-left:1.6rem;
 }
 input:focus{
     border: 1px solid #007C89;
 box-sizing: border-box;
 border-radius: 0.2rem;
+padding-left:1.6rem;
 }
 .savebtn{
     width: 7.6rem;
