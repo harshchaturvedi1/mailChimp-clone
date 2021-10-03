@@ -6,14 +6,11 @@ import Homepage from "../components/Homepage"
 import Campaigns from "../components/Campaigns"
 import SignupPage from "../components/SignupPage/Signup"
 import Template from "../components/Template/Template"
-import Temp from "../components/CampaignsSelectTab"
-
 export default function Routers() {
     return <div>
         <Switch>
             <Route exact path="/">
                 <Homepage />
-                {/* <Temp /> */}
             </Route>
             <Route path="/signup">
                 <SignupPage />

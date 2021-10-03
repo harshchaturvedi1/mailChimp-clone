@@ -16,11 +16,6 @@ button {
   font-weight: 500;
   font-size: 18px;
   align-items: center;
-  border: 1px solid red;
-}
-.crossImg {
-  /* border: 2px solid red; */
-  margin-left: 25vw;
 }
 .addyellow:hover {
   color: #ffe01b;
