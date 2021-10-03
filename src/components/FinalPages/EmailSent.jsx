@@ -56,7 +56,7 @@ export default function EmailSent(){
                 <P2 style={{marginTop:"2.8rem"}}>View or share your campaign link:</P2>
                 <Link to="/dashboard" style={{fontSize:"1.4rem",color:"#007C89", cursor: "pointer"}}>https://malichi.mp/639f69ef1b3/proin-a-lectus-ac-turpis-facilies</Link>
                 <br/>
-                <Button>Track Your Stats With Our Mobile App</Button>
+                <Button><Link to="/dashboard" style={{textDecoration:"none", color:"inherit"}}>Track Your Stats</Link></Button>
                 <img style={{position: 'absolute',top:"18.5rem", left:"55rem"}} src="/images/successImg.svg" alt=""/>
             </PopUp>
         </Main>

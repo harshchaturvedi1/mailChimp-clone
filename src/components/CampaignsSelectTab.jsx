@@ -17,7 +17,7 @@ export default function CampaignsSelectTab(){
         top: 0;
         left: 31.8rem;
         width: 100vw;;
-        padding: 4.5rem 15.1rem;
+        padding: 3rem 15.1rem;
     `
 
     const PopUp = styled.div`

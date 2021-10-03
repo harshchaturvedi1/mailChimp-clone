@@ -369,7 +369,7 @@ export default function Campaigns() {
                                                 </span>
                                                 <span className={styles.aud}> in the audience</span>
                                                 <span className={styles.to}> Designing. </span>
-                                                <span className={styles.rec2}>1 recipient</span>
+                                                <span className={styles.rec2}>3 recipients</span>
                                             </p>
                                             <p
                                                 style={{ marginTop: "0.5rem", marginBottom: "1rem" }}
