@@ -1,4 +1,5 @@
 import styles from "./BlockTabNavbar.module.css";
+import {Link} from "react-router-dom"
 export const Navbar = () => {
     return (
         <div className={styles.mainDiv}>
@@ -38,7 +39,7 @@ export const Navbar = () => {
                         />
                     </svg>
                 </p>
-                <p className={styles.Button}>Continue</p>
+                <p className={styles.Button}><Link to="/campaigns">Continue</Link></p>
             </div>
         </div>
     );

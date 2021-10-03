@@ -1,5 +1,6 @@
 import styles from "./CampaignsSelectTab.module.css";
-import styled from "styled-components"
+import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 export default function CampaignsSelectTab(){
 
@@ -41,7 +42,7 @@ export default function CampaignsSelectTab(){
                             <li>Create custom templates and showcase your e-commerce products</li>
                             <li>Place blocks(images and text) side by side</li>
                         </ul>
-                        <button>Select</button>
+                        <button >Select</button>
                     </div>
                     <div>
                         <h2>Classic Builder</h2>
@@ -51,7 +52,7 @@ export default function CampaignsSelectTab(){
                             <li>Create custom templates and showcase your e-commerce products</li>
                             <li>Place blocks(images and text) side by side</li>
                         </ul>
-                        <button>Select</button>
+                        <button><Link to="/dashboard/template">Select</Link></button>
                     </div>
                 </div>
             </PopUp>

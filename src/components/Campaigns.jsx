@@ -1,11 +1,13 @@
 import {Navbar} from "./Dashboard/Navbar"
 import styles from "./Campaigns.module.css"
 import {useState} from "react"
+import CampaignsSelectTab from "./CampaignsSelectTab"
 export default function Campaigns(){
     const[save1,setSave1]=useState(false)
     const[save2,setSave2]=useState(false)
     const[save3,setSave3]=useState(false)
     const[save4,setSave4]=useState(false)
+    const [status,setStatus] = useState(true)
     const [totext1,setTotext1]=useState("")
     const [totext2,setTotext2]=useState("")
     const [totext3,setTotext3]=useState("")
@@ -52,7 +54,7 @@ export default function Campaigns(){
                     <div className={styles.upgrade}><button className={styles.upgradebtn}>Upgrade</button></div>
                     <div style={{marginLeft:"1.7rem"}}><p className={styles.miduser}>User</p><p className={styles.miduserdet}>User Details</p></div>
             </div>
-            <div className={styles.last}>
+            {status?<div className={styles.last}>
                         <div className={styles.lastfirst_div}>
                            {!save1?<> <div style={{marginLeft:"2.9rem",marginTop:"2.8rem"}}><img src="/mail.png"/></div>
                             <div style={{display:"flex",flexDirection:"column",marginLeft:"1.6rem"}}><p className={styles.keepit}>Let's get started!</p><p className={styles.drfemail}>Draft Email</p></div>
@@ -163,10 +165,10 @@ export default function Campaigns(){
                                             <p className={styles.who}>Design the content for your email.</p>
                                         </div>
                                         <div style={{marginTop:"7rem",marginLeft:"7rem",marginBottom:"1rem"}}><img src="/pagelike.png"/></div>
-                                        <div><button className={styles.subbtn} style={{marginLeft:"28rem"}}>Design Email</button></div>
+                                        <div><button onClick={()=>setStatus(false)}  className={styles.subbtn} style={{marginLeft:"28rem"}}>Design Email</button></div>
                                     </div>
                         </div>
-            </div>
+            </div>:<CampaignsSelectTab />}
         </div>
         <div style={{marginLeft:"33.5rem",marginTop:"10rem"}}>
                     <div className={styles.syc}>Share Your Campaign</div>
