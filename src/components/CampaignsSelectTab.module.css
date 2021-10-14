@@ -1,58 +1,58 @@
-.h1{
-    font-size: 2.4rem;
-    font-family: 'Source Serif Pro Regular';
-    text-align: center;
-    /* margin-top: 28.1rem; */
-    padding-top:3.1rem
+.h1 {
+  font-size: 2.4rem;
+  font-family: "Source Serif Pro Regular";
+  text-align: center;
+  /* margin-top: 28.1rem; */
+  padding-top: 3.1rem;
 }
-.h1~p{
-    text-align: center;
-    font-size:1.6rem;
-    font-weight: 400;
-    width:66rem;
-    margin:auto;
-    margin-top: 1rem;
+.h1 ~ p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 66rem;
+  margin: auto;
+  margin-top: 1rem;
 }
-.closeX{
-    position: absolute;
-    top:7.5rem;
-    left: 92rem;
+.closeX {
+  position: absolute;
+  top: 7.5rem;
+  left: 92rem;
 }
-.template{
-    width: 66rem;
-    margin: 3.4rem auto;
-    display:flex;
-    justify-content:space-between;
+.template {
+  width: 66rem;
+  margin: 3.4rem auto;
+  display: flex;
+  justify-content: space-between;
 }
-.template>div{
-    background-color:white;
-    width:26.9rem;
+.template > div {
+  background-color: white;
+  width: 26.9rem;
 }
-.template>div>img{
-    margin-top:1.7rem;
-    width: 15.1rem;
-    margin-left: 5.9rem;
+.template > div > img {
+  margin-top: 1.7rem;
+  width: 15.1rem;
+  margin-left: 5.9rem;
 }
-.template>div>h2{
-    margin-top: 2rem;
-    margin-left: 8.1rem;
+.template > div > h2 {
+  margin-top: 2rem;
+  margin-left: 8.1rem;
 }
-.template>div>ul{
-    margin-top: 3.4rem;
-    margin-left:4rem;
+.template > div > ul {
+  margin-top: 3.4rem;
+  margin-left: 4rem;
 }
-.template>div>ul>li{
-    font-size:1.4rem;
-    line-height:2.2rem;
-    font-weight: 400;
-    width: 21.6rem;
+.template > div > ul > li {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  width: 21.6rem;
 }
-.template>div>button{
-    background-color:#007C89;
-    color:white;
-    font-weight: 500;
-    font-size:1.4rem;
-    padding: 0.7rem 1.7rem;
-    border: none;
-    margin:1.5rem 9.6rem;
+.template > div > button {
+  background-color: #007c89;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.7rem 1.7rem;
+  border: none;
+  margin: 1.5rem 9.6rem;
 }
