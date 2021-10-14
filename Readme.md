@@ -14,7 +14,6 @@ Take a look - [Demo](https://mail-chimp-clone.vercel.app/)
 - css
 - javascript
 - React
-- js dom manipulation
 - font Awesom icons
 - bootstrap (for styling flash mesage)
 - Nodejs
